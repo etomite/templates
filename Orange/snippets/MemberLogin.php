@@ -1,3 +1,5 @@
+//<?php
+
 # MemberLogin - Etomite 0.6 - 2004-09-07
 # Created By: Ralph A. Dahlgren - rad14701@yahoo.com
 # Part of MemberMakeMenu - MemberLogin - MemberLogout Snippet Suite
@@ -16,40 +18,36 @@ $formaction = "index.php";
 $pageid=$etomite->documentIdentifier; # ID of the calling document
 $tbl = $etomite->dbConfig['dbase'].".".$etomite->dbConfig['table_prefix'];
 
-if(($LoginName != "") && (LoginPassword != "")) {
-
+if (($LoginName != "") && (LoginPassword != "")) {
   # Query for the user ID (id) for the GuestBook owner
-  $sql = "SELECT * FROM ".$tbl."manager_users WHERE ".$tbl."manager_users.username='$LoginName';";
-  $rs = $etomite->dbQuery($sql);
-  $limit = $etomite->recordCount($rs);
+    $sql = "SELECT * FROM ".$tbl."manager_users WHERE ".$tbl."manager_users.username='$LoginName';";
+    $rs = $etomite->dbQuery($sql);
+    $limit = $etomite->recordCount($rs);
 
   # Check to make sure $LoginName has been created and assigned and check $LoginPassword
-  if($limit == 1) {
-    $userrec = $etomite->fetchRow($rs);
+    if ($limit == 1) {
+        $userrec = $etomite->fetchRow($rs);
 
-    # Valid LoginUsername and LoginPassword found
-    if (md5($LoginPassword) === $userrec['password']) {
-      $output = TRUE;
-      $_SESSION['MemberLoggedIn'] = TRUE;
-      header( "Location: index.php" );
-    }
-    # LoginPassword incorrect
+        # Valid LoginUsername and LoginPassword found
+        if (md5($LoginPassword) === $userrec['password']) {
+            $output = true;
+            $_SESSION['MemberLoggedIn'] = true;
+            header( "Location: index.php" );
+        } # LoginPassword incorrect
+        else {
+            $output = false;
+            $_SESSION['MemberLoggedIn'] = false;
+            header( "Location: index.php" );
+        }
+    } # LoginName not found
     else {
-      $output = FALSE;
-      $_SESSION['MemberLoggedIn'] = FALSE;
-      header( "Location: index.php" );
+        $output = false;
+        $_SESSION['MemberLoggedIn'] = false;
+        header( "Location: index.php" );
     }
-  }
-  # LoginName not found
-  else {
-    $output = FALSE;
-    $_SESSION['MemberLoggedIn'] = FALSE;
-    header( "Location: index.php" );
-  }
-}
-# Create login prompt form
+} # Create login prompt form
 else {
-  $output = "
+    $output = "
   <fieldset><legend>Member Login</legend>
   <form name='guestbook' method='post' action='$formaction'>
     <input type='hidden' name='id' value='$pageid' />
@@ -73,10 +71,10 @@ else {
 }
 
 # If user is not allowed to access this menu, login fails without notification of reason
-if(in_array($LoginName, $disallow)) {
-  $output = FALSE;
-  $_SESSION['MemberLoggedIn'] = FALSE;
-  header( "Location: index.php" );
+if (in_array($LoginName, $disallow)) {
+    $output = false;
+    $_SESSION['MemberLoggedIn'] = false;
+    header( "Location: index.php" );
 }
 
 # Return Binanry Logic Result

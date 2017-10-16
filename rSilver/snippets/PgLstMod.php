@@ -1,3 +1,5 @@
+//<?php
+
 // by: Jeroen Bosch
 // date: 10 feb 2005
 // snippet: HomeMadeMenu

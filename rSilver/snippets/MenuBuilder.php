@@ -1,7 +1,5 @@
 //<?php
 
-// default snippet amended to NOT show section pages when a section in the menu is clicked
-
 if (!isset($id)) {
     $id = $etomite->documentIdentifier; //current document
 }
@@ -10,15 +8,15 @@ $indentString="";
 
 if (!isset($indent)) {
     $indent = "";
-    $indentString .= "";
+    $indentString .="<img src='templates/rSilver/flechebarre.gif' align='middle' border='0'></img> ";
 } else {
     for ($in=0; $in<$indent; $in++) {
         $indentString .= "&nbsp;";
     }
-    $indentString .= "&raquo;&nbsp;";
+    $indentString .= "<img src='templates/rSilver/carrebarre.gif' align='middle' border='0'></img> ";
 }
 
-$children=$etomite->getActiveChildren($id);
+$children = $etomite->getActiveChildren($id);
 $menu = "";
 $childrenCount = count($children);
 $active="";
@@ -32,8 +30,7 @@ for ($x=0; $x<$childrenCount; $x++) {
         $active="";
     }
     if ($children[$x]['id']==$etomite->documentIdentifier || $children[$x]['id']==$etomite->documentObject['parent']) {
-        $menu .= "<a ".$active." href='[~".$children[$x]['id']."~]'>$indentString".$children[$x]['pagetitle']."</a>";
-//[[MenuBuilder?id=".$children[$x]['id']."&indent=2]]";	
+        $menu .= "<a ".$active." href='[~".$children[$x]['id']."~]'>$indentString".$children[$x]['pagetitle']."</a>[[MenuBuilder?id=".$children[$x]['id']."&indent=2]]";
     } else {
         $menu .= "<a href='[~".$children[$x]['id']."~]'>$indentString".$children[$x]['pagetitle']."</a>";
     }

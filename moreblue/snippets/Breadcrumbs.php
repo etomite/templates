@@ -1,3 +1,5 @@
+//<?php
+
 // --------------------
 // Snippet: Breadcrumbs
 // --------------------
@@ -27,7 +29,7 @@
    $maxCrumbs = 100;
 
    // $pathThruUnPub [ true | false ]
-   // When you path includes an unpublished folder, setting this to 
+   // When you path includes an unpublished folder, setting this to
    // true will show all documents in path EXCEPT the unpublished.
    // Example path (unpublished in caps)
    // home > news > CURRENT > SPORTS > skiiing > article
@@ -60,7 +62,7 @@
 
    // $crumbSeparator [string]
    // Define what you want between the crumbs
-   $crumbSeparator = "»";
+   $crumbSeparator = "ï¿½";
 
    // $homeCrumbTitle [string]
    // Just in case you want to have a home link,
@@ -73,41 +75,39 @@
 // ***********************************
 
 // Check for home page
-if ($showCrumbsAtHome || (!$showCrumbsAtHome && ($etomite->documentIdentifier != $etomite->config['site_start'])) ){
-
+if ($showCrumbsAtHome || (!$showCrumbsAtHome && ($etomite->documentIdentifier != $etomite->config['site_start']))) {
   //initialize crumb array
-  $ptarr = array();
+    $ptarr = array();
   // get current page parent id
-	$docInfo = $etomite->getDocument($etomite->documentIdentifier);
-  $pid = $docInfo['parent'];
+    $docInfo = $etomite->getDocument($etomite->documentIdentifier);
+    $pid = $docInfo['parent'];
   // show current page, as link or not
-  if ($showCurrentCrumb){
-    if ($currentAsLink){
-      $ptarr[] = '<a href="[~'.$etomite->documentIdentifier.'~]" title="'.$docInfo['pagetitle'].'">'.$docInfo['pagetitle'].'</a>';
-    } else {
-      $ptarr[] = $docInfo['pagetitle'];
+    if ($showCurrentCrumb) {
+        if ($currentAsLink) {
+            $ptarr[] = '<a href="[~'.$etomite->documentIdentifier.'~]" title="'.$docInfo['pagetitle'].'">'.$docInfo['pagetitle'].'</a>';
+        } else {
+            $ptarr[] = $docInfo['pagetitle'];
+        }
     }
-  }
   // assemble intermediate crumbs
-  $crumbCount = 0;
-  $activeOnly = ($pathThruUnPub)? 0 : 1;
-  while (($parent=$etomite->getPageInfo($pid,$activeOnly,"id,pagetitle,published,deleted,parent")) && ($crumbCount < $maxCrumbs)) {
-    if ($parent['published'] && !$parent['deleted'] && $parent['id'] != $etomite->config['site_start']){
-      $ptarr[] = '<a href="[~'.$parent['id'].'~]" title="'.$parent['pagetitle'].'">'.$parent['pagetitle'].'</a>';
-    }    
-    $pid = $parent['parent'];
-    $crumbCount++;
-  }
+    $crumbCount = 0;
+    $activeOnly = ($pathThruUnPub)? 0 : 1;
+    while (($parent=$etomite->getPageInfo($pid, $activeOnly, "id,pagetitle,published,deleted,parent")) && ($crumbCount < $maxCrumbs)) {
+        if ($parent['published'] && !$parent['deleted'] && $parent['id'] != $etomite->config['site_start']) {
+            $ptarr[] = '<a href="[~'.$parent['id'].'~]" title="'.$parent['pagetitle'].'">'.$parent['pagetitle'].'</a>';
+        }
+        $pid = $parent['parent'];
+        $crumbCount++;
+    }
   // insert '...' if maximum number of crumbs exceded
-  if ($parent != 0){
-    $ptarr[] = '...';
-  }
+    if ($parent != 0) {
+        $ptarr[] = '...';
+    }
   // add home link if desired
-  if ($showHomeCrumb && ($etomite->documentIdentifier != $etomite->config['site_start'])){
-    $ptarr[] = '<a href="[~'.$etomite->config['site_start'].'~]" title="'.$homeCrumbTitle.'">'.$homeCrumbTitle.'</a>';
-  }
+    if ($showHomeCrumb && ($etomite->documentIdentifier != $etomite->config['site_start'])) {
+        $ptarr[] = '<a href="[~'.$etomite->config['site_start'].'~]" title="'.$homeCrumbTitle.'">'.$homeCrumbTitle.'</a>';
+    }
 
-  $ptarr = array_reverse($ptarr);
-  return join($ptarr, " $crumbSeparator ");
-
+    $ptarr = array_reverse($ptarr);
+    return join($ptarr, " $crumbSeparator ");
 } // end check if home page

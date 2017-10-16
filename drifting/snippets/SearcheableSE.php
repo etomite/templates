@@ -1,3 +1,5 @@
+//<?php
+
 // ----------------------
 // Snippet: SearchableSE
 // ----------------------
@@ -19,8 +21,8 @@ $metaTag = '<meta name="robots" content="noindex,nofollow" >'; // was " /> which
 $metaTags = '<meta name="robots" content="ALL" />'; // was " /> which didn't validate
 
 // Determine if this page has been set to non-searchable
-if(!$etomite->documentObject['searchable']){
-  return $metaTag;
+if (!$etomite->documentObject['searchable']) {
+    return $metaTag;
 } else {
-  return $metaTags;
+    return $metaTags;
 }

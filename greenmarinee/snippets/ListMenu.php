@@ -1,3 +1,5 @@
+//<?php
+
 // --------------------
 // Snippet: ListMenu
 // --------------------
@@ -11,9 +13,9 @@
 // Configuration Settings
 
    // $removeNewLines
-   // This setting will remove white space from between <ul> and <li> 
+   // This setting will remove white space from between <ul> and <li>
    // items so the list can be styled in IE. This makes it hard to read
-   // the source code- set to false for troubleshooting before launch. 
+   // the source code- set to false for troubleshooting before launch.
    // False is also handy if the list will be horizontal.
    $removeNewLines = true;
 
@@ -32,10 +34,10 @@
    // $levelsDeep [ int ]
    // Specifies how many levels of menu you want to show starting
    // with the children of current document working back to root. For
-   // example, 3 levels would give you the children of the current 
-   // page, the current page and its siblings, and the current page's 
+   // example, 3 levels would give you the children of the current
+   // page, the current page and its siblings, and the current page's
    // parent and its siblings. The child generation is counted regardless
-   // of wether or not there are children. 
+   // of wether or not there are children.
    //
    // You can also specify negative  values. Negative values indicate
    // how many levels NOT to include, starting at the root. For example,
@@ -58,7 +60,7 @@
    
    // $showGlobals [ true | false ]
    // Leave the root level folders showing, even if $directGeneology is
-   // true. NOTE- this will NOT override a set $levelsDeep. Settable in 
+   // true. NOTE- this will NOT override a set $levelsDeep. Settable in
    // snippet call with LM_globals (0=false, 1=true)
    // [[ListMenu?LM_globals=1]]
    $showGlobals = true;
@@ -115,7 +117,7 @@ $ieSpace = ($removeNewLines)? "" : "\n";
 
 $fullGeneology = array();
 $geneologyMarker = (isset($LM_node))? $LM_node : $etomite->documentIdentifier;
-while ($currentMarker=$etomite->getPageInfo($geneologyMarker, null, 'id,parent')){
+while ($currentMarker=$etomite->getPageInfo($geneologyMarker, null, 'id,parent')) {
     $fullGeneology[] = $currentMarker['id'];
     $geneologyMarker = $currentMarker['parent'];
 }
@@ -123,12 +125,12 @@ $fullGeneology[] = 0;
 
 // alter geneology for correct depth
 $geneology = array();
-if (($levelsDeep > 0) && (count($fullGeneology) > $levelsDeep)){
-    for($i = 0; $i < $levelsDeep; $i++){
+if (($levelsDeep > 0) && (count($fullGeneology) > $levelsDeep)) {
+    for ($i = 0; $i < $levelsDeep; $i++) {
         $geneology[] = $fullGeneology[$i];
     }
-} elseif (($levelsDeep) < 0 && (count($fullGeneology) > abs($levelsDeep))){
-    for ($i = 0; $i < -$levelsDeep; $i++){
+} elseif (($levelsDeep) < 0 && (count($fullGeneology) > abs($levelsDeep))) {
+    for ($i = 0; $i < -$levelsDeep; $i++) {
         array_pop($fullGeneology);
     }
     $geneology = $fullGeneology;
@@ -146,45 +148,45 @@ $listSoFar = '';
 $lookForChild = 0;
 // Assemble sort string
 $sortString = '';
-foreach($sortWiz as $sortCriteria){
-  $sortString .= $sortCriteria[0] . " " . $sortCriteria[1] . ", ";
+foreach ($sortWiz as $sortCriteria) {
+    $sortString .= $sortCriteria[0] . " " . $sortCriteria[1] . ", ";
 }
-$sortString = substr($sortString,0,strlen($sortString)-2);
+$sortString = substr($sortString, 0, strlen($sortString)-2);
 
-for($geneCount=0;$geneCount < count($geneology);$geneCount++){
-    $childrenList = $etomite->getActiveChildren($geneology[$geneCount], $sortString, null,'id, pagetitle, longtitle, parent, isfolder, description');
-    if ($childrenList){
+for ($geneCount=0; $geneCount < count($geneology); $geneCount++) {
+    $childrenList = $etomite->getActiveChildren($geneology[$geneCount], $sortString, null, 'id, pagetitle, longtitle, parent, isfolder, description');
+    if ($childrenList) {
         $currentLevelList = '<ul id="LM_level_'.(count($geneology)-$geneCount).'">'.$ieSpace;
         $listPosition = 0;
-        foreach ($childrenList as $childItem){
-          if (!$directGeneology || $geneCount==0 || (($geneCount==1)&&(!$etomite->getActiveChildren($geneology[0]))) || ($directGeneology && in_array($childItem['id'],$geneology)) || ($showGlobals && ($geneology[$geneCount]==0))){
-                if ($childItem['isfolder']){
+        foreach ($childrenList as $childItem) {
+            if (!$directGeneology || $geneCount==0 || (($geneCount==1)&&(!$etomite->getActiveChildren($geneology[0]))) || ($directGeneology && in_array($childItem['id'], $geneology)) || ($showGlobals && ($geneology[$geneCount]==0))) {
+                if ($childItem['isfolder']) {
                     $cssStyle = (in_array($childItem['id'], $geneology))? ' class="LM_expanded': ' class="LM_collapsed';
                 } else {
                     $cssStyle = ' class="LM_endPage';
                 }
-	    $cssStyle .= ($alternateRows && ($listPosition%2))? '_alt"' : '"';
-                $currentLevelList .= '<li'.$cssStyle.'>';				
-                if((!$currentAsLink) && ($childItem['id'] == $etomite->documentIdentifier)){
+                $cssStyle .= ($alternateRows && ($listPosition%2))? '_alt"' : '"';
+                    $currentLevelList .= '<li'.$cssStyle.'>';
+                if ((!$currentAsLink) && ($childItem['id'] == $etomite->documentIdentifier)) {
                     $currentLevelList .= '<span id="LM_youAreHere">';
                     $currentLevelList .= $childItem['pagetitle'].'</span>';
                 } else {
                     $linkTitle = ($childItem['longtitle'])? $childItem['longtitle'] : $childItem['pagetitle'] ;
-                    $currentLevelList .= '<a href="[~'.$childItem['id'].'~]" title="' . $linkTitle .'">';
-                    $currentLevelList .= $childItem['pagetitle'].'</a>';
+                        $currentLevelList .= '<a href="[~'.$childItem['id'].'~]" title="' . $linkTitle .'">';
+                        $currentLevelList .= $childItem['pagetitle'].'</a>';
                 }
-	    $currentLevelList .= ($showDescription)? '<div class="LM_description">'.$childItem['description'].'</div>' : '' ;
+                $currentLevelList .= ($showDescription)? '<div class="LM_description">'.$childItem['description'].'</div>' : '' ;
                 if ($lookForChild == $childItem['id']) {
                     $currentLevelList .= $listSoFar;
                 }
-                $currentLevelList .= '</li>'.$ieSpace;
-          }
-          $listPosition++;
+                    $currentLevelList .= '</li>'.$ieSpace;
+            }
+            $listPosition++;
         }
         $currentLevelList .= '</ul>'.$ieSpace;
-      }
+    }
     $listSoFar = $currentLevelList;
-    $lookForChild = $geneology[$geneCount];   
+    $lookForChild = $geneology[$geneCount];
 }
 
 // send to parser

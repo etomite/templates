@@ -1,3 +1,5 @@
+//<?php
+
 //  --------------------------------------------
 //     Snippet:  MenuHori by summean
 //  --------------------------------------------
@@ -15,24 +17,21 @@ $seperator="";
 
 // --End Config--
 
-$children = $etomite->getActiveChildren($id); $menu = ""; $childrenCount = count($children);
-if($children==false) {
+$children = $etomite->getActiveChildren($id);
+$menu = "";
+$childrenCount = count($children);
+if ($children==false) {
     return false;
 }
 
-for($x=0; $x<$childrenCount; $x++) {
-
+for ($x=0; $x<$childrenCount; $x++) {
 //If its the last link/document, we don't want the seperator after it. 
 
-	if($x==($childrenCount-1)){ 
-
-$menu .= "<a href='[~".$children[$x]['id']."~]'>".$children[$x]['pagetitle']."</a>";
-
-	} else {
-
-$menu .= "<a href='[~".$children[$x]['id']."~]'>".$children[$x]['pagetitle']."</a><br />";
-	
-	}
+    if ($x==($childrenCount-1)) {
+        $menu .= "<a href='[~".$children[$x]['id']."~]'>".$children[$x]['pagetitle']."</a>";
+    } else {
+        $menu .= "<a href='[~".$children[$x]['id']."~]'>".$children[$x]['pagetitle']."</a><br />";
+    }
 }
 
 return $menu;

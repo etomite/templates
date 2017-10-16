@@ -1,4 +1,4 @@
-<?php
+//<?php
 
 $id = isset($id) ? $id : $etomite->documentIdentifier;
 $sortby = "menuindex";

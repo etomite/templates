@@ -1,19 +1,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de">
+
 <head>
 
-<title>[(site_name)] &raquo; [*pagetitle*]</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-[[MetaTagsExtra]]
+    <title>[(site_name)] &raquo; [*pagetitle*]</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> [[MetaTagsExtra]]
 
- <style type="text/css" media="screen">
-  <!--
-   @import url(templates/spreadfirefox/modules.css);
-   @import url(templates/spreadfirefox/nav.css);
-   @import url(templates/spreadfirefox/layout.css);
-  -->
- </style>
- <style type="text/css" media="all">@import "templates/spreadfirefox/style.css";</style><!--[if lte IE 6]>
+    <style type="text/css" media="screen">
+        <!-- @import url(templates/spreadfirefox/modules.css);
+        @import url(templates/spreadfirefox/nav.css);
+        @import url(templates/spreadfirefox/layout.css);
+        -->
+    </style>
+    <style type="text/css" media="all">
+        @import "templates/spreadfirefox/style.css";
+    </style>
+    <!--[if lte IE 6]>
  <style type="text/css" media="screen">
    /* IE min-width trick */
    div#wrapper1 { 
@@ -22,124 +24,131 @@
   </style>
   <![endif]-->
 
-<!-- Edit this ID = your ID for RSS Feeds - Favicon = your personal Favicon
+    <!-- Edit this ID = your ID for RSS Feeds - Favicon = your personal Favicon
 <link rel="SHORTCUT ICON" href="yourdomain.com/favicon.ico">
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.yourdomain.com/index.php?id=48" />
 -->
 
 </head>
+
 <body>
 
-<a name="top"></a>
-<div class="hide">
-   <div id="site-slogan"><span>[(site_name)] &raquo; [*pagetitle*]</span></div>
-  <a href="#content" title="Skip the site navigation to go directly to the content">Skip to content</a>
-</div>
-<!-- closes #header-->
-<!-- START: HEADER -->
-<div id="wrapper1">
- <div id="wrapper2">
-  <div class="header" id="header">
-   <div class="headerpadding">
-         <div id="site-name"><a href="index.php" title="Home"><img src="templates/spreadfirefox/logo.png" alt="Logo"></a></div>
-    
-   {{topmenufirefoxetomite}}        
-        
+    <a name="top"></a>
+    <div class="hide">
+        <div id="site-slogan"><span>[(site_name)] &raquo; [*pagetitle*]</span></div>
+        <a href="#content" title="Skip the site navigation to go directly to the content">Skip to content</a>
     </div>
-   </div>
+    <!-- closes #header-->
+    <!-- START: HEADER -->
+    <div id="wrapper1">
+        <div id="wrapper2">
+            <div class="header" id="header">
+                <div class="headerpadding">
+                    <div id="site-name">
+                        <a href="index.php" title="Home"><img src="templates/spreadfirefox/logo.png" alt="Logo"></a>
+                    </div>
 
-<!-- END: HEADER-->
-<hr class="hide">  
-    <div class="columns">
-            <div class="leftcolumn sidebar" id="sidebar-left">
-        <div class="leftpadding">
-       
-<div class="leftpadding"><div class="block block-forum" id="block-forum-0"> 
-<h3 class="title"><span>Navigation</span></h3>
-<br />
+                    {{topmenufirefoxetomite}}
 
-[[MenuBuilderFirefoxEtomite?id=0]]
+                </div>
+            </div>
 
-</div></div>
+            <!-- END: HEADER-->
+            <hr class="hide">
+            <div class="columns">
+                <div class="leftcolumn sidebar" id="sidebar-left">
+                    <div class="leftpadding">
+
+                        <div class="leftpadding">
+                            <div class="block block-forum" id="block-forum-0">
+                                <h3 class="title"><span>Navigation</span></h3>
+                                <br /> [[MenuBuilderFirefoxEtomite?id=0]]
+
+                            </div>
+                        </div>
 
 
 
-</div>
-<br />
+                    </div>
+                    <br /> {{sitesearchfirefoxetomite}}
 
-{{sitesearchfirefoxetomite}}
+                </div>
 
-</div>
-			
-</div>
+            </div>
 
-{{adsensefirefoxetomite}}
- 
-</div>
-<br />
+            {{adsensefirefoxetomite}}
+
+        </div>
+        <br />
 
 
     </div>
     <div class="rightcolumn sidebar" id="sidebar-right">
-    <div class="rightpadding">
-    <div class="block block-themeswitcher" id="block-themeswitcher-0">
-	<h2 class="title"><span>Info</span></h2>
-	<div class="content">
-	Put some Text here, or what ever!
-	</div></div>
+        <div class="rightpadding">
+            <div class="block block-themeswitcher" id="block-themeswitcher-0">
+                <h2 class="title"><span>Info</span></h2>
+                <div class="content">
+                    Put some Text here, or what ever!
+                </div>
+            </div>
 
-<br />
-<br />
+            <br />
+            <br />
 
-<!-- 
+            <!-- 
 {{secondmenurightfirefoxetomite}}
 -->
 
-      </div>
-      </div> 
-	 
-     <hr class="hide">  
-     <div class="centercolumn">
-     <div class="centerpadding">
-     <div class="main-content" id="main">
-            
-     <div id="breadcrumbs">
-
-    {{breadcrumbsfirefoxetomite}} 
-    
-     </div>
-	<h1 id="title">[*longtitle*]</h1>                                   	    
-   <!-- start main content -->
-   <!-- begin content -->
-	<div class="node">
-    <div class="info"></div>
-  <div class="content">
-  <div class="flexinode-body flexinode-1">
-	<div class="flexinode-textarea-2"><div class="form-item">
-  	<p>
-    <label>[*content*]</label>
-  	</p>
-  	<p>
-    <label></label>
-  	</p>
-  	</div>
-	</div><div class="flexinode-textfield-4"></div>
-	  </div>  </div>
-      <div class="links">{{footercontentfirefoxetomite}}</div>
-	  </div>
-  
-	<!-- end content -->
-	<!-- end main content -->
-          </div><!-- main -->
         </div>
-      </div>
+    </div>
+
+    <hr class="hide">
+    <div class="centercolumn">
+        <div class="centerpadding">
+            <div class="main-content" id="main">
+
+                <div id="breadcrumbs">
+
+                    {{breadcrumbsfirefoxetomite}}
+
+                </div>
+                <h1 id="title">[*longtitle*]</h1>
+                <!-- start main content -->
+                <!-- begin content -->
+                <div class="node">
+                    <div class="info"></div>
+                    <div class="content">
+                        <div class="flexinode-body flexinode-1">
+                            <div class="flexinode-textarea-2">
+                                <div class="form-item">
+                                    <p>
+                                        <label>[*content*]</label>
+                                    </p>
+                                    <p>
+                                        <label></label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flexinode-textfield-4"></div>
+                        </div>
+                    </div>
+                    <div class="links">{{footercontentfirefoxetomite}}</div>
+                </div>
+
+                <!-- end content -->
+                <!-- end main content -->
+            </div>
+            <!-- main -->
+        </div>
+    </div>
     </div>
     <div class="clearing"></div>
-    <hr class="hide">
+    <hr class="hide"> {{footerfirefoxetomite}}
 
-		{{footerfirefoxetomite}}
-	
-	</div><!-- wrapper -->
-</div><!-- outer_wrapper -->
+    </div>
+    <!-- wrapper -->
+    </div>
+    <!-- outer_wrapper -->
 </body>
+
 </html>
