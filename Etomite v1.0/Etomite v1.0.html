@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+[!MetaTagsExtra!]
+<link rel="stylesheet" type="text/css" href="./templates/default/main.css" />
+<link rel="shortcut icon" href="./favicon.ico" />
+</head>
+<body>
+
+<div id="page">
+
+  <div id="header"><img src="templates/default/images/logo.jpg" id="mainlogo" alt="Etomite" />
+    <h1>[(site_name)]</h1>
+    <h2>fast, free, infinitely flexible</h2>
+  </div><!--= end header -->
+
+  <div id="menu">
+    [!ListGlobal!]
+  </div><!-- end menu -->
+
+  <div id="sidebar">
+    [!ListMenu?LM_levels=-1!]
+    [!getSidebar?doc=sideBanner&wildcard=1&class=sideBanner!]
+    [!SearchPrompt!]
+    {{W3C Validation}}
+  </div><!-- end sidebar -->
+
+  <div id="content">
+    <p id="pagetrail">[[PageTrail]]</p>
+    <h1 class="pagetitle">[*longtitle*]</h1>
+    [*content*]
+  </div><!-- end content -->
+
+  <div id="footer">
+    <div>Copyright &copy; [!DateTime?format=%Y!], [(site_name)]. All Rights Reserved. | [[PoweredBy]]</div>
+    <div>Page Last Edited: [!DateTime?timestamp=[*editedon*]!].</div>
+    <div>Site Last Edited: [!SiteUpdate!].</div>
+    <div>MySQL: [^qt^], [^q^] request(s), PHP: [^p^], total: [^t^], document retrieved from [^s^]</div>
+  </div><!-- end footer -->
+
+</div><!-- end page -->
+
+{{FixInertTags}}
+
+</body>
+</html>
