@@ -1,0 +1,148 @@
+/* 
+	Aura: Webpage Exoskin v1. Copyright Leorex Pty Limited, 2003 (http://www.leorex.com/).
+	Licenced under Attribution-ShareAlike License (http://creativecommons.org/licenses/by-sa/1.0/)
+*/
+
+/* HTML Tag Defaults */
+	body {
+		font:80%/145% Verdana, Helvetica, sans-serif;
+		}
+	h1, h2, h3, h4 {
+		margin:0;
+		padding:0;
+		}
+	img {
+		border:0;
+		}
+
+/* Page */	
+	#pagehead h2 {
+		padding:10px 15px;
+		font-size:180%;
+		}
+	#pagecontent h3 {
+		margin:5px 0;
+		padding:10px 0 0 0;
+		font-size:110%;
+		}
+	#pagecontent h4 {
+		margin:10px 0;
+		padding:0;
+		font-size:100%;
+		font-weight:bold;
+		}
+	#pagecontent img.left {
+		float:left;
+		margin:3px 10px 10px 0;
+		}
+	#pagecontent img.right {
+		float:right;
+		margin:3px 0 10px 7px;
+		}
+
+/* Sidebar */
+	#sidebarcontent {
+		font-size:85%;
+		line-height:140%;
+		}
+	#sidebarcontent h3 {
+		margin:0;
+		padding:20px 5px 5px 7px;
+		font-size:150%;
+		font-weight:bold;
+		}
+	#sidebarcontent h4 {
+		margin:0;
+		padding:5px 5px 0 7px;
+		font-size:100%;
+		font-weight:bold;
+		}
+	#sidebar img {
+		float:left;
+		margin:3px 5px 2px 0;
+		}
+	#sidebarcontent p {
+		margin:0;
+		padding:5px 10px 5px 7px;
+		}
+
+/* Fotter */
+	#containerfootcontent {
+		font-size:75%;
+		line-height:140%;
+		}
+
+/* Links */
+	#primarynav {
+		font-size:75%;
+		}
+	#primarynav ul {
+		display:inline;
+		list-style:none;
+		margin:0;
+		padding:0;
+		}
+	#primarynav li {
+		display:inline;
+		margin:0;
+		padding:0;
+		}
+	#primarynav li a {
+		padding:0 10px;
+		text-decoration:none;
+		font-weight:bold;
+		}
+	#primarynav ul.subnav {
+		display:block;
+		}
+	#primarynav ul.subnav li {
+		display:block;
+		}
+	#primarynav ul.subnav li a {
+		padding:0 15px;
+		}
+
+	ul.navpath {
+		display:inline;
+		list-style:none;
+		margin:0;
+		padding:0;
+		font-size:75%;
+		}
+	ul.navpath li {
+		display:inline;
+		margin:0;
+		padding:0;
+		text-decoration:none;
+		font-weight:bold;
+		}
+	ul.navpath li a {
+		padding:0;
+		}
+
+	#pagecontent a:link, #pagecontent a:visited {
+		font-weight:bold;
+		text-decoration:none;
+		}
+	#pagecontent a:hover, #pagecontent a:active {
+		font-weight:bold;
+		text-decoration:underline;
+		}
+
+	#containerfootcontent a:link, #containerfootcontent a:visited {
+		font-weight:bold;
+		text-decoration:none;
+		}
+	#containerfootcontent a:hover, #containerfootcontent a:active {
+		font-weight:bold;
+		text-decoration:underline;
+		}
+
+	#sidebarcontent a:link, #sidebarcontent a:visited {
+		font-weight:bold;
+		text-decoration:none;
+		}
+	#sidebarcontent a:hover, #sidebarcontent a:active {
+		font-weight:bold;
+		text-decoration:underline;
+		}

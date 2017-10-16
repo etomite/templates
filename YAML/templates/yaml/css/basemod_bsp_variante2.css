@@ -1,0 +1,30 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : basemod_bsp_variante2.css
+**  Funktion    : Variation des Basislayouts (2-Spalten-Layout mit grafikfreiem Spaltenhintergrund)
+**
+*/
+
+@media screen
+{
+/* Rechte Spalte mit fester Breite von 250 Pixeln */
+#col2 {width: 250px;}
+#col3 {margin-right: 250px;}
+
+/* Abschalten der linken Spalte */
+#col1 {display:none;}
+#col1_content {display:none;}
+#col3 {margin-left:0px; border-left:0;}
+
+/* Hintergrund für rechte Spalte */
+#col3 {margin-right:0; border-right: 250px #ddc solid;}
+
+/* Randabstände anpassen */
+#main { color: #000; background: #fff ; padding: 0; }
+#footer {margin: 0em; padding: 1em; border-top: 1px #888 solid; line-height: 2em;}
+
+} 

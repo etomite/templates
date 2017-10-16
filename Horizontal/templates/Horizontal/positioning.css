@@ -1,0 +1,63 @@
+/* Positioning stuff */
+div#main {
+  text-align: left;
+  width: 800px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#header {
+  margin-top:0px;
+  padding-top: 5px;
+  width: 800px;
+  height: 136px;
+  background-color: transparent;
+}
+
+  #slogan {
+      float: left;
+      margin-left: 100px;
+      background-color:transparent;
+      width: 300px;
+      height: 90px;
+  }
+
+  #logo {
+      width: 131px;
+      height: 121px;
+      margin: 5px 20px 0px 0px;
+      float: right;
+      background-color: transparent;
+      border: 1px solid #3569aa;
+  }
+
+div#navigation {
+  position: absolute;
+  top: 110px;
+  width: 800px;
+  z-index:1;
+  background-color: transparent;
+}
+
+
+div#content {
+  z-index:0;
+  min-height: 320px;        /* stupid IE doesn't understand min-height */
+  height: auto !important;  /* but it also doesnt understand important ;-) */
+  height: 320px;
+  padding: 50px 20px 20px 30px;  /* need quite a bit of padding-top for navigation! */
+  width: 748px;
+  background-color:white;
+  margin: 0px;
+  border: 1px solid #3569aa;
+  border-top: 3px solid #3569aa;
+}
+
+div#etolink {
+  text-align:center;
+  padding-top:5px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}

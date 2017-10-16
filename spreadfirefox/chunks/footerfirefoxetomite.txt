@@ -1,0 +1,10 @@
+<!-- START: FOOTER-->
+<div id="footer" class="footer">
+<p>
+CMS by <a href="http://www.Etomite.org" title="Etomite CMS">Etomite.org</a> | 
+Theme by <a href="http://drupal.org/project/spreadfirefox" title="Theme by factoryjoe">factoryjoe</a> | 
+{{topfirefoxetomite}} | 
+<a href="http://www.etomite.org/forums/index.php?showuser=1305" title="Info">Ported to Etomite by freemind</a>
+
+</p>
+</div>

@@ -1,0 +1,72 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : iehacks.css
+**  Funktion    : Basis-Stylesheet [Korrektur der Rendering-Bugs des Internet Explorers]
+**
+*/
+
+@media screen
+{
+/* Extrem-Zoom im IE beiseitigen. Durch die Font-Definition zoomt der IE wieder normal */       
+body * { font:100.01% 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;} 
+
+/* Hold Floats-Hack: Sorgt im IE dafür, dass Floats ihre Breite behalten und nicht unkontrolliert  */
+/* seitlich ausbrechen. */
+   
+/* Hides from IE-mac \*/
+* html .hold_floats {height: 1%;}
+/* End hide from IE-mac */
+
+/* Clearfix-Anpassung für IE */
+.clearfix {display: inline-table;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/* .floatbox-Anpassung für IE */
+/* Hides from IE-mac \*/
+* html .floatbox {width:100%;}
+/* End hide from IE-mac */
+
+/* Vermeidung des IE/Win Guillotine Bugs bei Änderung der Hintergrundfarbe von Hyperlinks 
+**
+** Die Fälle für sein Eintreten sind zahlreich: http://www.positioniseverything.net/explorer/guillotine.html
+** Abhängig vom fertigen Layout können daher weitere Anpassungen erforderliche werden. 
+*/
+
+a, a:hover { background: transparent; }
+#footer a, a:hover { background: transparent; }
+
+/* Vermeidung des 'Internet Explorer and the Expanding Box Problem' 
+/* Erläuterungen zum Hack: http://www.positioniseverything.net/explorer/expandingboxbug.html
+**
+** Der Lösungsvorschlag mittels Overflow:hidden macht in den IE-Versionen 5.01 und 5.5 massive Probleme. Die DIVs werden
+** dort überhaupt nicht mehr angezeigt. Der erzwungene Textumbruch funktioniert hingegen und kann angewandt werden. Sieht 
+** allerdings nicht sonderlich schön aus. 
+*/
+
+ body {word-wrap: break-word; }  
+
+/* Ende des Hacks */
+
+/* Eigene Erweiterung des von mir 'Internet Explorer and the Flickering Box Problem' getauften Bugs. 
+** Bei bestimmten Breiten des Browserfensters 'verschwindet' die mittlere Spalte völlig und taucht bei kleiner Veränderung
+** der Fensterbreite wieder auf.
+** Durch 'display:inline' für #col3_content wird das ganze alberne Verhalten der mittleren Spalte im IE aufgehoben. 
+** Dementsprechend müssen jedoch die Abstandsdefinitionen an #col3 übergeben werden.*/
+#col3_content {display: inline; padding: 0; margin: 0; }
+#col3_content .floatbox {display: inline-block; width: auto; } 
+
+/* Alle innerhalb von #col3_content verwendeten Blocklevel-Elemente müssen display:inline-block; erhalten */
+h1, h2, h3, h4, blockquote, code, code.css, code.xhtml {display: inline-block;}
+/* Ende des Hacks */
+
+/* Für #col3 muss ein minimaler { padding-top: 0.05em } angegeben werden damit der IE die border bis ganz nach oben zeichnet. */ 
+#col3 {margin-top: 0; padding: 1em; padding-top: 1.05em; } 
+
+}

@@ -1,0 +1,10 @@
+<!-- This is a second green Menu on the right side -->
+<div class="block block-themeswitcher" id="block-themeswitcher-1">
+<h2 class="title"><span>Second Menu</span></h2>
+<div class="content">
+<div class="item-list">
+<ul>
+<li><a href="#" class="active">box_grey</a></li>
+<li><a href="#" class="active">garden</a></li>
+</ul></div></div>
+</div>

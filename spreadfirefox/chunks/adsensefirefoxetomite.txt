@@ -1,0 +1,6 @@
+<!-- Put here GoogleAdsense or what ever -->
+
+<br /><br />
+{{AdsenseFirefox}}<br /><br />
+{{AdsenseGoogle}}
+<br /><br />

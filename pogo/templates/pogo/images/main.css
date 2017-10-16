@@ -1,0 +1,146 @@
+/* base styling for site including base font-family etc */
+
+*{
+border:0px;
+margin:0px;
+padding:0px;
+
+}
+
+body{
+background:url('bgstripes.gif');
+font-family:Tahoma, Verdana, Arial, Trebuchet MS;	
+font-size:0.8em;
+}
+
+h1{
+font-family:inherit;
+font-size:24px;
+}
+
+h2{
+font-size:18px
+}
+
+h3{
+font-size:14px;
+font-weight:bold;
+}
+
+/*------------------------------------------------
+</Basic Formatting>*/
+
+/*################################################*/
+
+/*<Positional>
+--------------------------------------------------*/
+/*margin-left:auto;
+margin-right:auto;
+text-align:center;
+position:relative;
+(positional css for centering a div.. always useful :)
+*/
+
+#wrapper
+{
+position:relative;
+width:800px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+
+#banner
+{
+background:#CCCCFF;
+height:120px;
+
+}
+
+#nav
+{
+margin:0;
+padding:0;
+text-align:right;
+min-height:30px;
+background:#CCCCFF;
+border-bottom:#6666CC solid 3px;
+}
+
+#nav ul
+{
+margin-right:20px;
+list-style:none;
+display:inline;
+}
+
+#nav li
+{
+list-style:none;
+display:inline;
+margin:0 15px 10px 0;
+}
+
+#nav a
+{
+color:#6666CC;
+font-size:1.5em;
+text-decoration:none;
+border-bottom:3px solid #6666CC;
+}
+
+#nav a:hover
+{
+text-decoration:none;
+border-bottom:8px solid #6666CC;
+}
+
+#content
+{
+text-align:left;
+border-bottom:#6666CC solid 3px;
+padding:30px;
+background:white;
+}
+
+#content ul
+{
+padding-left:75px;
+}
+#content li
+{
+padding-bottom:0.5em;
+}
+
+#content h1
+{
+border-top:1px dashed gray;
+padding:1em 0 0 0;
+color:#6666CC;
+font-size:1.5em;
+}
+
+#content p
+{
+padding:1em 0 2em 2em;
+}
+
+/*------------------------------------------------
+</Positional>*/
+
+/*################################################*/
+
+
+.bannertext
+{
+text-align:left;
+color:#333399;
+font-size:34pt;
+padding:75px 0 0 20px;;
+letter-spacing:-1px;
+}
+
+.activelink
+{
+color:white;
+}

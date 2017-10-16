@@ -1,0 +1,24 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : basemod_2col_left.css
+**  Funktion    : Variation des Basislayouts (2-Spalten-Layout)
+**
+*/
+
+@media screen
+{
+/* linke Spalte */
+#col1 {	width: 22.5%; }	
+
+/* Mittlere Spalte und rechte Spalte sind gleich breit: Spaltenbreite = (100% - 22,5%) / 2 = 37.75% */
+
+/* Rechte Spalte */
+#col2, #col2_content { display:none; } 
+
+#col3 { margin-left: 22.5%; margin-right: 0; }
+
+} 

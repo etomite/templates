@@ -1,0 +1,8 @@
+<!-- Site Serach for Etomite - Edit the ID -->
+<div class="block block-user" id="block-user-0">
+<h2 class="title"><span>Seitensuche</span></h2>
+<div class="content">
+<form action="index.php?id=16" method="post" id="search"> 
+<input size="20" value="" name="search" id="keys" type="text" /> 
+<input id="submit" value="Search" type="submit" />
+</form>

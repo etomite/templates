@@ -1,0 +1,203 @@
+/* Blue Garden for ETOMITE 6.0.1 copyright Ian Smith,
+www.n-vent.com */
+body{
+	font-size: 11px;
+	background-color: black;
+	font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+}
+p{
+	color: #585858;
+	font-size: 11px;
+	margin: 0;
+	padding: 0;
+}
+td{
+		vertical-align: top;
+}
+#footer{
+	padding: 5px 0 10px 43px;
+	border-top-color: #575757;
+	border-top-style: dashed;
+	border-top-width: 1px;
+}
+#footer ul{
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+#footer li{
+	display: inline;
+	padding: 0 5px;
+}
+#footer a{
+	color: #f1c17c;
+}
+#footer a:hover{
+	color: white;
+}
+#footer p{
+	font-size: 10px;
+	color: #e78c5a;
+	display: inline;
+}
+.content{
+	padding: 10px;
+}
+#contentbody{
+	background: White url(images/bshdw.png) repeat-x top;
+	width: 526px;
+	padding: 30px 0 10px 0;
+	margin: 0;
+	height: 300px;	
+}
+#bodylft{
+	padding: 0;
+	margin: 0;
+	background: Black url(images/sidebar_lf-bg.jpg) no-repeat bottom;
+}
+#contentbody p{
+	padding: 0 0 8px 0;
+}
+#sidebar{
+	width: 201px;
+	padding: 0;
+	margin: 0;
+	background: Black;
+	background-image: url(images/sidebar_bg.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+#sidebar p{
+	color: #80a1cd;
+	padding: 25px 0 0 10px;
+	text-align: right;
+	font-size: 16px;
+	margin: 0;
+}
+#sidebar ul{
+	margin: 0;
+	padding: 0;
+}
+#sidebar li{
+	color: #80a1cd;
+	padding: 0;
+	text-align: right;
+	font-size: 11px;
+	list-style-type: none;
+}
+#sidebar a{
+	color: #80a1cd;
+}
+#sidebar a:hover{
+	color: #fff;
+}
+h1, h2, h3{
+	font-weight: bold;
+	padding: 0 0 1px 0;
+	margin: 0;
+	}
+#pagetitle {
+	font-size: 16px;
+	color: #e78c5a;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: bold;
+	padding: 0 0 5px 10px;
+}
+h1{
+	font-size: 13px;
+	color: black;
+	border-bottom: 1px dashed Silver;	
+}
+h2{
+	font-size: 12px;
+	color: #315b9b;
+}
+h3{
+	font-size: 11px;
+	color: #80a1cd;
+}
+#sitename{
+	background-image: url(images/tagline.png);
+	width: 569px;
+	vertical-align: bottom;
+	border-bottom: 1px solid White;
+}
+#sitename p{
+	color: #80a1cd;
+	font-size: 26px;
+	letter-spacing: .1em;
+}
+
+#mainimage{
+	height: 230px;
+	padding: 0;
+	margin: 0;
+}
+
+#menu{
+	background: url(images/menubg.jpg);
+	width: 201px;
+	height: 230px;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;	
+}
+#menu p, #menu ul, #menu li{
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-align: right;
+}
+#menu p{
+	padding: 15px 15px 5px 5px;
+}
+#menu ul{
+	padding: 0 15px 5px 5px;
+	list-style-type: none;
+	}
+#menu li{
+		padding: 0;
+		}
+#menu a{
+	color: #c6d7ef;
+	text-decoration: none;
+	}
+#menu a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+#menu a:visited{
+	color: #c6d7ef;
+	text-decoration: none;
+}
+		
+/* menu item of current location */
+#menu li.LGlob_active{
+		color: white;
+		padding: 0;
+		}
+
+a:link {
+	color: #315b9b;
+}
+a:hover {
+	color: #000;
+}
+a:visited {
+	color: #80a1cd;
+}
+
+#etoNotice{
+	color: #80A1CD;
+	width: 686px;
+	margin: 0 auto;
+	font-size: 9px;
+	padding: 0;
+}
+#etoNotice p{
+	padding: 0;
+}
+#etoNotice a:hover {
+	color: silver;
+}

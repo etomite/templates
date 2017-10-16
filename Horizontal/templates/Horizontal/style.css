@@ -1,0 +1,66 @@
+body {
+  text-align:center;
+  background: #fff url(treeback.jpg) repeat-x top;
+  font-size: 0.7em;
+  font-family: Verdana, Tahoma, sans-serif;
+  padding-top:0px;
+  margin-top: 0px;
+}
+
+a {
+  color: #821517;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.5em;
+  position: relative;
+  left: -15px;
+}
+
+h2 {
+  font-size: 1.3em;
+  position: relative;
+  left: -10px;
+}
+
+h3 {
+  font-size: 1.1em;
+  position: relative;
+  left: -5px;
+}
+
+fieldset {
+  border: #3569aa solid 1px;
+  margin: 10pt;
+  padding: 8px 8px;
+}
+
+legend {
+  background-color: #3569aa;
+  color: white;
+  border: #3569aa solid 1px;
+  padding: 2px 10px;
+  font-weight: bold;
+}
+
+.thumbnail {
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  padding: 2px;
+}
+
+.imageview {
+  border-style: ridge;
+  border-color: black;
+  border-width: medium;
+  padding: 2px;
+}
+
+.etoNotice { display:none; }

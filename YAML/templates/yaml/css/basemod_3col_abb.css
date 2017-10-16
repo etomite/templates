@@ -1,0 +1,27 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : basemod_3col_abb.css
+**  Funktion    : Variation des Basislayouts (3-Spaltenlayout mit zwei Contentspalten)
+**
+*/
+
+@media screen
+{
+/* linke Spalte */
+#col1 {	width: 22.5%; margin: 0;}	
+
+/* Rechte Spalte */
+#col2 {	width: 38.75%; float:left; margin: 0;}
+
+/* Mittlere Spalte und rechte Spalte sind gleich breit: Spaltenbreite = (100% - 22,5%) / 2 = 37.75% */
+#col3
+{
+  	margin-left: 61.25%; 
+   	margin-right: 0%; 
+}
+
+} 

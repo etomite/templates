@@ -1,0 +1,47 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : basemod_bsp_variante3.css
+**  Funktion    : Variation des Basislayouts (3-Spalten-Layout mit fixer Gesamtbreite)
+**
+*/
+
+@media screen
+{
+/* Festlegung der Layoutbreite und Zentrierung*/
+#page_margins { 
+	width:960px; 
+	margin-left: auto;
+ 	margin-right: auto;
+	max-width:inherit;  /* min-width für fixes Layout abschalten */
+	min-width:inherit;  /* max-width für fixes Layout abschalten */
+}
+
+/* Korrektur von Randabständen */
+#main { margin: 0; padding: 0; }
+#footer {margin:0; padding: 1em; border-color: #aaa; }
+
+/* Himtergrundgrafik für linke Spalte - Grafikbreite 250 Pixel */
+#main { background: #fff url("../img/bg_left2.gif") repeat-y top left; }
+
+/* ######################################################################################################
+** ### Formatierung der Inhaltsspalten ##################################################################
+** ######################################################################################################
+*/
+
+#col1 {	width: 250px; }	
+
+#col3
+{
+  	margin-left: 250px; 
+   	margin-right: 250px; 
+	border-left: 1px solid #aaa;
+	border-right: 2px dotted #aaa;
+}
+
+#col2 {	width: 250px; }
+
+} 

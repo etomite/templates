@@ -1,0 +1,377 @@
+/*******************************************************************************
+
+	++=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=++
+	|| rSilver v1.0 template & style by _rasel^ 2005 ||
+	++=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=++
+	 Czech & Slovak Etomite Comunity on www.etomite.sk
+
+/--=[ Color ]=-----------------------------------------------------------------+
+|
+|	Linku: #005784; Link cursor: #00D464;
+|	Textu: #000000;
+|	Codes: #808080;
++
+/--=[ Border ]=----------------------------------------------------------------+
+|
+|	Tabulky: #A9B8C2;
+|	Formulara "hover": #00D464;
+|	Menu "hover": #005784;
++
+/--=[ Background ]=------------------------------------------------------------+
+|
+|	Tabulky [1]: #ECECEC;
+|	Tabulky [2]: #DCE1E5;
+|	Codes: #FAFAFA;
+|	Menu "hover": #A4D4F3;
+|
+| Nadpis: #005784;
+|
++------------------------------------------------------------------------------+
+
+*******************************************************************************/
+
+/*-----------------------------------------------------------=[ FORMULARE ]=--*/
+
+input {
+	border: 1px solid #A9B8C2;
+	background-color : #ECECEC;
+	padding: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 2px;
+	}
+
+input:hover {
+	border: 1px solid #00D464;
+	}
+
+textarea {
+	border : 1px solid #A9B8C2;
+	background-color : #ECECEC;
+	padding: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin: 2px;
+	}
+
+textarea:hover {
+	border : 1px solid #00D464;
+	}
+
+/*----------------------------------------------------------------=[ TELO ]=--*/
+
+body {
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.tn{background: #FFF url(tb4_m.jpg) no-repeat top right;}
+
+.w22{width: 180px; /*sirka menu*/}
+
+.codes { /*Formatovanie odseku s kodmy*/
+	color: #808080;
+	display: block;
+	border: 1px dashed #A9B8C2;
+	background: #FAFAFA;
+	font-size: 10px;
+	padding: 10px;
+	}
+
+.nazov_UPL { /*Pozadie a okraje textu uputavky*/
+	display: block;
+	border: 1px solid #A9B8C2;
+	width: auto;
+	background: #ECECEC;
+	padding: 10px;
+	}
+
+.nazov_bg { /*Pozadie nazvu - zyraznenie*/
+	display: block;
+	width: auto;
+	background: #ECECEC;
+	padding: 4px;
+	}
+
+.nazov_mini-bg { /*Pozadie nazvu - mini (okolo) zyraznenie*/
+	background: #ECECEC;
+	padding: 8px;
+	}
+
+.mnu { /*Menu hlavnej podstranky*/
+	display: block;
+	border: 1px solid #A9B8C2;
+	width: auto;
+	padding: 4px;
+	margin: 0px;
+	background: #ECECEC;
+	}
+
+.mnu:hover { /*Menu hlavnej podstranky - "kurzor cez"*/
+	display: block;
+	border: 1px solid #005784;
+	width: auto;
+	padding: 4px;
+	margin: 0px;
+	background: #A4D4F3;
+	}
+
+/*-------------------------------------------------=[ OHRANICENIA STRANKY ]=--*/
+
+/*publikacna cast stranky*/
+.mainTable {
+	border-top: 1px solid #A9B8C2; /*ohranicenie stranky - hory okraj*/
+	border-left: 1px solid #A9B8C2; /*ohranicenie stranky - lavy okraj*/
+	border-right: 1px solid #A9B8C2; /*ohranicenie stranky - pravy okraj*/
+	width: 100%; /*sirka stranky*/
+	background: #fff url(section.jpg) no-repeat top right ;
+	margin: 0px auto;
+	text-align: left;
+}
+
+/*moje*/
+.round {
+	border-top: 1px solid #A9B8C2; /*ohranicenie stranky - hory okraj*/
+	border-left: 1px solid #A9B8C2; /*ohranicenie stranky - lavy okraj*/
+	border-right: 1px solid #A9B8C2; /*ohranicenie stranky - pravy okraj*/
+	border-bottom: 1px solid #A9B8C2;
+	width: 95%; /*sirka stranky*/
+	background: #ECECEC;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.back {
+	padding: 0px;
+	margin:	0px;
+	height: 100%;
+	border:	1px solid #A9B8C2;
+	background: #fff;
+}
+
+.mainTable tr td{padding: 4px;}
+
+body,td,th {
+	/* font-family: Verdana, Arial, Helvetica, sans-serif; */
+	font-size: 11px;
+	color: #000; /*text hlavneho okna, menu, sekundarne titulky*/
+}
+
+/*a,a:hover{text-decoration: underline;}*/
+
+/*----------------------------------------------------=[ ODKAZY / LINKY ]=----*/
+
+a {
+	color: #005784;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #006600;
+}
+
+.content {
+	font-size: 11px;
+}
+
+.content a {
+	color: #000066;
+	text-decoration: none;
+}
+
+.content a:hover {
+	color: #006600;
+	border-bottom: #FF0000 dashed 1px;
+	/*background-color: #00CCFF;*/
+}
+
+/*----------------------------------------------------------------=[ MENU ]=--*/
+
+.navigation {
+	padding: 0px;
+	margin:	0px;
+	height: 100%;
+	font-size: 11px;
+	/*border: 1px solid #A9B8C2;*/
+	border-top: 4px double #A9B8C2; /*ohranicenie stranky - hory okraj*/
+	border-left: 1px solid #A9B8C2; /*ohranicenie stranky - lavy okraj*/
+	border-right: 1px solid #A9B8C2; /*ohranicenie stranky - pravy okraj*/
+	border-bottom: 1px solid #A9B8C2;
+	background: /*#FFF*/ url(navigation.jpg) no-repeat top right;
+}
+
+.navigation a,.navigation a:hover {
+	padding: 4px;
+	margin: 4px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+	display: block;
+	color: #000000;
+	border: 1px solid #CCCCCC;
+	background: /*#ECECEC*/ url(navigation_h.jpg) no-repeat top right;
+}
+
+.navigation a:hover {
+	padding: 4px;
+	text-decoration: none;
+	color: #005784;
+	background: /*#A4D4F3*/ url(navigation_d.jpg) no-repeat top right;
+	border: 1px solid #005784;
+}
+/*----------------------------------------------------------------------------*/
+
+.headers {
+	font-size: 11px; /*text hlavneho titulku - nadpis stranky*/
+	font-weight: bold;
+}
+
+.headers a, .headers a:hover {
+	color: white; /*farba hlavneho titulku - nadpis stranky*/
+	text-decoration: none;
+}
+
+.highLight {
+	background: #fff url(buttonbar.gif) repeat-x top ;
+	font-weight: bold;
+	border: solid 1px #000000;
+}
+
+/*-------------------------------------------------------------=[ TABULKY ]=--*/
+
+.fancyRow {
+	color: #FFF;
+	background: /*#fff*/ url(buttonbar_gs.gif) repeat-x top; /*pozadie listy   [(site_name)]*/
+	}
+
+.fancyRow2 {
+	background: #fff url(buttonbar.gif) repeat-x top; /*pozadie listy [[PoweredBy]]*/
+	}
+
+.fancyRow3 {
+	border-top: 0px solid #A9B8C2; /*ohranicenie stranky - hory okraj*/
+	border-left: 0px solid #A9B8C2; /*ohranicenie stranky - lavy okraj*/
+	border-right: 0px solid #A9B8C2; /*ohranicenie stranky - pravy okraj*/
+	border-bottom: 0px solid #A9B8C2;
+	height: 40px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+body{background: #fff url(treeback.jpg) repeat-x top;}
+
+.border-top-bottom {
+	border-top: 1px solid #A9B8C2;
+	border-bottom: 1px solid #A9B8C2;
+}
+
+.navigationHead {
+	text-align:	center;
+	font-weight: bold;
+	border-top:	1px solid #A9B8C2;
+	border-left: 1px solid #A9B8C2;
+	border-right: 1px solid #A9B8C2;
+}
+
+.smallText{font-size: 9px;}
+
+.text{width: 154px; }
+
+img{border: 0px;}
+
+li {
+	padding: 0px;
+	margin: 6px 0px 0px 15px;
+	list-style: disc outside url("li.gif");
+}
+
+ul{margin: 0px 0px 0px 20px;}
+
+.silent {
+	color: #000000;
+	text-decoration: none;
+}
+
+.silent:hover {
+	color: #000000 !important;
+	text-decoration: none !important;
+}
+
+.logoBox {
+	padding: 4px;
+	margin: 4px;
+	border:	1px solid #A9B8C2;
+	background: #ECECEC url(navigation.jpg) no-repeat top right;
+}
+
+fieldset{padding: 5px;}
+
+legend{font-weight: bold}
+
+legend a,legend a:hover {
+	display: block;
+	text-decoration: none;
+}
+
+.u{text-decoration: underline;}
+
+.strike{text-decoration:line-through;}
+
+.content {
+	width: 84%;
+	height: 206px;
+}
+
+.mono {
+	font-family:"Courier New", Courier, mono, sans-serif;
+}
+
+/* FORM ELEMENTS */
+
+.textbox, .textarea {
+}
+
+td.basic {background-color: #FFFFFF; vertical-align:top;}
+
+.fauxbutton {
+	font: 11px Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif;
+	border: 1px solid #A9B8C2;
+	background-color: #F7CC76;
+	padding: 2px;
+	color: #000000;
+}
+
+.boldtext{font-weight: bold;}
+
+h1 {
+	font-size: 13px;
+	color: #A9B8C2;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 6px;
+}
+
+.boldtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: #005784 dotted 2px;
+	color: #005784;
+	margin-left: 0px;
+	margin-top: 4px;
+	margin-right: 0px;
+	margin-bottom: 4px;
+}
+
+p.notop{
+margin-top: 0px;
+}
+
+/*acronym{cursor: hand; border-bottom: dashed 1px #000000;}*/
+
+#countdown1{
+font-weight: bold;
+font-size: 16px;}

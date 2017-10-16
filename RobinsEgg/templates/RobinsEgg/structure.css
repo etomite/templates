@@ -1,0 +1,223 @@
+/*
+	Robins Egg Etomite Template
+	Inspired by wehner's Tangerine OWD template
+	http://www.wehnerweb.com
+	Modified by B. Woods Design for Etomite CMS use
+*/
+
+
+/* Pre-defined element styles ----------------------------------------*/
+
+body {
+
+	font-size: 9pt;
+	font-family: arial, "helvetical";
+	margin: 0 auto;
+	text-align: center;
+
+}
+
+a {
+
+	text-decoration: underline;
+	font-family: arial, "helvetica";
+
+}
+
+a:hover {
+	
+	text-decoration: underline;
+	font-family: arial, "helvetica";
+
+}
+
+img {
+
+	border: 0px;
+
+}
+
+h1 {
+
+	font-family: arial, "helvetica";
+	font-size: 17pt;
+
+}
+
+h2 {
+
+	font-family: arial, "helvetica";
+	font-size: 13.5pt;
+
+}
+
+h3 {
+
+	font-family: arial, "helvetica";
+	font-size: 11pt;
+
+}
+
+/* Main Container Styles ----------------------------------------*/
+div.container {
+
+	width: 650px;
+	height: auto;
+	margin: 20px auto 0px auto;
+	text-align: left;
+
+}
+
+/* Header Styles ----------------------------------------*/
+div.header {
+
+	width: auto;
+	height: 51px;
+	padding: 10px;
+	border-top: 5px SOLID;
+	vertical-align: middle;
+
+}
+
+div.header div {
+
+	width: auto;
+	float: right;
+
+}
+
+div.header div a {
+
+	font-size:10pt;
+	text-decoration: none; 
+	font-family: arial, "helvetica";
+
+}
+
+/* Menu Styles ----------------------------------------*/
+div.menu {
+
+	border: 0px;
+	text-align: left;
+	margin-bottom: 20px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+}
+
+div.menu a {
+
+	text-decoration: none;
+	font-size: 11pt;
+	font-family: arial, "helvetica";
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+div.menu a:hover {
+
+	color: #fff;
+	font-family: arial, "helvetica";
+	text-decoration: none;
+	font-size: 11pt;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+/* Content Styles ----------------------------------------*/
+div.content {
+
+	padding-left: 15px;
+	font-family: verdana, "helvetica";
+	text-align: justify;
+	line-height: 1.5em;
+	margin-right: 205px;
+	padding: 0 1em 1ex 1em;
+
+}
+
+/* Side Box Styles ----------------------------------------*/
+div.side_box {
+
+	margin-right: 5px;
+	float: right;
+	clear: right;
+	width: 180px;
+	font-size: 10pt;
+	font-family: verdana, "helvetica";
+	padding: 5px;
+	margin-bottom: 15px;
+
+}
+
+/* Sub Menu Styles ----------------------------------------*/
+div.sub_menu {
+
+	width: 190px;
+	border-bottom: 3px SOLID;
+	margin-right: 5px;
+	float: right;
+	clear: right;
+	margin-bottom: 15px;
+
+}
+
+div.sub_menu div {
+
+	border-top: 1px SOLID;
+	border-left: 1px SOLID;
+	border-right: 1px SOLID;
+	padding: 2px;
+	padding-left: 5px;
+	
+
+}
+
+div.sub_menu a {
+
+	text-decoration: none;
+	font-family: arial, "helvetica";
+
+}
+
+div.sub_menu span {
+
+	float: right;
+	padding-right: 5px;
+	vertical-align: middle;
+
+}
+
+/* Sub Links Styles ----------------------------------------*/
+div.sub_links {
+
+	width: auto;
+	font-size: 9pt;
+	font-family: arial, "helvetica";
+	text-align: center;
+	padding: 10px;
+
+}
+
+div.sub_links a {
+
+	text-decoration: none;
+	font-family: arial, "helvetica";
+
+}
+
+/* Footer Styles ----------------------------------------*/
+div.footer {
+
+	width: auto;
+	font-size: 8pt;
+	font-family: verdana, "helvetica";
+	padding: 5px;
+
+}

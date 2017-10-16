@@ -1,0 +1,144 @@
+/* 
+	Aura: Webpage Exoskin v1. Copyright Leorex Pty Limited, 2003 (http://www.leorex.com/).
+	Licenced under Attribution-ShareAlike License (http://creativecommons.org/licenses/by-sa/1.0/)
+*/
+
+/* Adjust these styles to your colour scheme */
+	body {
+		background-color:#a6b1bd;
+		color:#222;
+		}
+	#globalheadcontent {
+		background-color:#000;
+		}
+	#pagehead {
+		background-color:#fff;
+		}
+	#pagehead h2 {
+		background-color:#e5e5cc;
+		}
+	#pagecontent {
+		background-color:#fff;
+		}
+	#sidebarcontent {
+		color:#223;
+		}
+	#sidebarcontent .alt {
+		background-color:#b7b789;
+		}
+	#primarynav {
+		background-color:#b7b789;
+		border-top:1px solid #333;
+		}
+	#primarynav li a:hover {
+		background-color:#eed;
+		}
+
+/* Adjust the following styles to your preferences */
+
+/* Headings */	
+	#pagehead h2 {
+		color:#036;
+		}
+	#sidebarcontent h3, #sidebarcontent h4 {
+		color:#036;
+		}
+
+/* Links */
+	#primarynav {
+		color:#fff;
+		}
+	#primarynav li {
+		border-right:1px solid #999;
+		}
+	#primarynav li a {
+		color:#000;
+		}
+	#primarynav li a:hover {
+		color:#556;
+		}
+	#primarynav ul.subnav {
+		background-color:#b7b789;
+		}
+	#primarynav ul.subnav li {
+		border:none;
+		}
+	#primarynav ul.subnav li a:hover {
+		background-color:#e5e5cc;
+		color:#000;
+		}
+
+	ul.navpath li {
+		color:#333;
+		}
+
+	#pagecontent a:link, #pagecontent a:visited {
+		color:#069;
+		}
+	#pagecontent a:hover, #pagecontent a:active {
+		background-color:#def;
+		color:#069;
+		}
+
+	#containerfootcontent a:link, #containerfootcontent a:visited {
+		color:#069;
+		}
+	#containerfootcontent a:hover, #containerfootcontent a:active {
+		background-color:#def;
+		color:#069;
+		}
+
+	#sidebarcontent a:link, #sidebarcontent a:visited {
+		color:#036;
+		}
+	#sidebarcontent a:hover, #sidebarcontent a:active {
+		background-color:#e1e1cd;
+		color:#036;
+		}
+
+/* Miscellaneous */ 
+	.border {
+		border:1px solid #999;
+		}
+	form {
+		border:1px dashed #ccc;
+		background-color:#f3f3ea;
+		}
+	input, textarea {
+		border:1px solid #aaa;
+		}
+	input.button {
+		background-color:#b7b789;
+		}
+	input.button:hover {
+		background-color:#ffe;
+		}
+	table {
+		border:1px solid #999;
+		}
+	th, td {
+		border:1px solid #ccc;
+		}
+
+/* Page Design Graphics */
+	#container {
+		background-image:url(aura_page_background.gif);
+		background-repeat:repeat-y;		
+		}
+	#sidebar {
+		background-image:url(aura_sidebar_head.gif);
+		background-repeat:no-repeat;
+		}
+	#containerfoot {
+		background-image:url(aura_page_foot.gif);
+		background-repeat:no-repeat;
+		background-position:bottom;
+		}
+	#pagehead h2 {
+		background-image:url(aura_page_head.gif);
+		background-repeat:repeat-x;
+		}
+	#sidebarcontent .alt {
+		background-image:url(aura_sidebar_alt.gif);
+		background-repeat:repeat-y;
+		}

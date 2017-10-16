@@ -1,0 +1,192 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : content.css
+**  Funktion    : Formatierung der Inhalte (Texte, Grafiken, Links, Listen, Tabellen usw.)
+**
+*/
+
+@media all
+{
+body { font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif; }
+
+h1,h2,h3,h4 { font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; display:block; }
+
+h1 {font-size: 1.1em; font-weight:bold; color: #336699;  background:inherit;  margin:0.4em 0 0.5em 0; border-bottom: 1px #ccc solid;}
+h2 {font-size: 1.0em; font-weight:bold; color: #fff; background-color: #006699;   margin:0.2em 0 0.5em 0; padding: 0.3em; }
+h3 {font-size: 1.0em; font-weight:bold; color: #336699; margin:0.4em 0 0.3em 0;}
+h4 {font-size: 1.0em; font-weight:bold; color: #888; margin:0.4em 0 0.3em 0; border-bottom: 1px #ccc solid;}
+
+#teaser h1 {font-size: 1.2em; border: 0;}
+
+#col1_content h1 {color: #222; }
+#col1_content h3 { color: #222; border-bottom: 1px #ccc solid; }
+#col2_content h3 { border-bottom: 1px #ccc solid; }
+
+p,ul {line-height: 1.5em;}
+p {line-height: 1.5em; margin: 0 0 1em 0; }
+
+address {
+	font-style:normal;	
+	line-height: 1.5em;
+	margin: 0 0 1em 0;
+}
+
+strong,b {font-weight: bold;}
+em,i { font-style:italic; }
+
+em.mono { 
+	font-family: monospace;
+	font-style: normal;
+	padding:0 0.3em 0 0.3em;
+	background:#f4f4f4;
+	border: 1px #ccc solid;
+}
+
+em.file { 
+	font-family: monospace;
+	font-style: normal;
+	padding:0 0.3em 0 0.3em;
+	padding-left: 14px;
+	color: #000099;
+	background: transparent url('../img/icons/file.gif') no-repeat left;
+}
+
+code {
+	display: block;
+	margin: 0 0 1em 1em;
+	font-family: monospace;
+	font-size: 1em;
+	padding: 0.5em;
+	color: #000; 
+	background: #f0f0f4;
+	border-left: 8px #ccd solid;
+}
+
+code.css { 
+	background-image: url("../img/bg_css.gif");
+    background-repeat: no-repeat;
+	background-position: top right;
+}
+
+code.xhtml { 
+	background-image: url("../img/bg_xhtml.gif");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+blockquote { 
+	font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif; 
+	color: #666; 
+	background: transparent; 
+	border: 0;
+}
+
+hr { color: #fff; background:transparent; margin: 0 0 0.5em 0; padding: 0 0 0.5em 0; border-bottom: 1px #eee solid; }
+
+acronym, abbr {
+	letter-spacing: .07em;
+	border-bottom: 1px dashed #c00;
+	cursor: help;
+}
+
+.bluebox {
+	color:#000;
+	background: #f0f0f6; padding: 2px; border: 1px #ccd solid;
+	text-align: center;
+	padding: 4px 0 4px 0;
+	margin-bottom: 1em;
+}
+
+.bluebox p {
+	padding: 0px 8px 0 8px;
+}
+
+ul.linklist {
+ list-style-type: none;
+}
+
+ul.linklist li {margin:0;}
+
+/* ######################################################################################################
+** ### Bildpositionierung links- und rechtsbündig als Fließobjekte ######################################
+** ######################################################################################################
+*/
+
+img.float_left {
+	float: left;
+	margin-right: 1em; 
+	margin-bottom: 0.15em; 
+	border:0;
+}
+
+img.float_right {
+	float: right;
+	margin-left: 1em; 
+	margin-bottom: 0.15em; 
+	border:0;
+}
+
+img.center {
+	text-align:center;
+	background: #fff;
+	padding: 4px;
+	border:1px #ddd solid;
+}
+/* ######################################################################################################
+** ### Auszeichnung lokaler und Externer Links ##########################################################
+** ######################################################################################################
+*/
+
+a, a em.file {color: #900; text-decoration:none;}
+a:hover {background-color: #fee; text-decoration:underline;}
+
+#topnav a { color: #fff; background:transparent; text-decoration:none; }
+#topnav a:hover{ text-decoration:underline; background-color: transparent;}
+
+a.dl_link {
+	display: block;
+	padding: 0;
+	margin: 0.5em auto 0 auto;
+}
+
+a.dl_link:hover { text-decoration: none; background-color: transparent;}
+
+#footer a { color: #669; }
+#footer a:hover {background-color: #eef; }
+
+#col3 a[href^="http:"], #col3 a[href^="https:"], 
+#col1 p a[href^="http:"], #col1 p a[href^="https:"],
+#col2 p a[href^="http:"], #col2 p a[href^="https:"]
+{
+	padding-left: 12px;
+	background-image: url('../img/icons/ext_link.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* ######################################################################################################
+** ### Formulare ########################################################################################
+** ######################################################################################################
+*/
+
+input, textarea {
+    width: auto;
+	font: 1em Verdana, Arial, Helvetica, Sans-Serif;
+	border: 1px #ccc solid;
+    background: #fafafa;
+	padding: 3px;
+	color: #777;
+}
+
+input[type=text]:focus, textarea:focus {
+	background: #f0f0f0;
+	color: #333;
+	border-color: #666;
+}
+
+
+}

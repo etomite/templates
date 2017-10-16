@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
+<head>
+<title>[(site_name)] &raquo; [*pagetitle*]</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="[*description*]" />
+[[GetKeywords]]
+[[SearchableSE]] 
+<style type="text/css">
+@import url('assets/site/amc_style2.css');
+</style>
+<link rel="stylesheet" type="text/css" href="templates/drifting/css/drifting_screen.css" media="screen, tv, projection" />
+<link rel="stylesheet" type="text/css" href="templates/drifting/css/drifting_print.css" media="print" />
+<script type="text/javascript">
+<!--
+// Empty script to kill FOUC in IE
+// www.bluerobot.com/web/css/fouc.asp
+-->
+</script>
+</head>
+<body>
+<!-- Layout container starts -->
+<div id="layoutBox">
+<!-- HEADER: controls the header layout, images, title and subTitle. -->
+<div id="headerBox">
+<div id="headerLeftBox" style="width: 322px; height: 76px">
+<span class="title">
+[(site_name)]
+</span>
+<br />
+<span class="subTitle">
+web site
+</span>
+</div>
+<div id="headerRightBox">
+<br /><br /><br /><br />&raquo;&raquo;&nbsp;[*longtitle*]&nbsp;
+<!-- you could also use [[PageTrail]] in place of the above -->
+</div>
+</div>
+<!-- MENU: include as many submenus as you want.  Menu groups should begin with a
+<h1> and then all menu links need to be defined in a <div class="menuGroup">.
+The <span class="noDisplay"> | </span> after each link only needs to be included
+if this site will be loaded in a text only browser -->
+<div id="menuBox">
+<h1>Main menu</h1>
+<div class="menuGroup">
+[[MenuBuilder?id=0]]
+</div>
+<h1>Other links</h1>
+<div class="menuGroup">
+[[MenuBuilder?id=310]]
+</div>
+<!-- MENU FOOTER: could include a site search field here -->
+<!--
+<h1>Third menu</h1>
+<div class="menuGroup">
+</div>
+-->
+</div>
+<!-- MAIN CONTENT : to add new headings, include a <h1> and then as many <p> blocks
+as you'd like.  <h2> will create subheadings. To finish a section, include a
+<br/> to clearly define it. -->
+<div id="mainContent">
+[*content*]
+<!-- FOOTER: whatever you want in here - maybe a last updated or breadcrumb? -->
+<div class="footer">
+Copyright&nbsp;&copy;&nbsp; [(site_name)].<br />Site last updated on [[LastEdit]].<br />[[LoadTime]]<br />Template by <a href="http://www.sixshootermedia.com/Pretty_as_a_Picture/templates/">snop</a> and <a href="http://www.gbtamc.co.uk/gbt">gbt</a> CMS by <a href="http://www.etomite.org">Etomite</a>.
+</div>
+</div>
+<!-- BUG FIX: This corrects another IE rendering bug....  You notice it only when the menu container length is
+greater than the main content container.  Without this, when an a:hover is triggered in the main container,
+IE reflows the page and cuts off the menu at the bottom of the main container. -->
+<div class="spacer">
+</div>
+<span class="upArrow">
+<a href="#top" title="jump to top" style="border: 0px;">Top of page</a>
+&nbsp;&nbsp;</span>
+</div>
+<!-- Layout container ends -->
+</body>
+</html>

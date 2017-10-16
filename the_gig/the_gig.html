@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- Doctype tells the browser what version of xhtml/html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="The Gig OSWD template" />
+<meta name="keywords" content="Add keywords here" />
+<meta name="author" content="_rasel^ to Etomite CMS" />
+<!-- Original template by Dave Reeder (www.davereederdesign.com) -->
+<link rel="stylesheet" type="text/css" href="templates/the_gig/thegig.css" media="screen" />
+<title>[(site_name)] &raquo; [*pagetitle*]</title>
+</head>
+<body>
+[[GetKeywords]]
+<div id="container"> <!-- The container keeps all the divs together and automatically aligns them centrally in the window -->
+<div id="hdr"> <!-- The hdr (header) div displays the banner image of the site and the site title -->
+<span id="sitetitle">[(site_name)]</span>  <!-- the sitetitle class positions the site title in the top left corner -->
+</div> <!-- End of header/banner div -->
+<div id="left"><!-- Left column -->
+<h1>Main Menu:</h1>
+[[ListMenu]]
+</div> <!-- End of left nav column -->
+<div id="main"><!-- Main content area -->
+<h1>[*longtitle*]</h1>
+<span class="updated">[[PageTrail]]</span>
+<div class="paragraphblock"><!-- Beginning of first paragraph block which houses the paragraph text -->
+<p>[*content*]</p>
+</div> <!-- End of this paragraph block -->
+</div> <!-- End of main content -->
+<div id="right">
+<h1>Gig Info:</h1>
+{{informacie}}
+<br /><!-- Keep this break here, it seems to fix a wierd overflow in IE -->
+</div><!-- End of right column -->
+</div> <!-- closes container -->
+<div id="bottom">
+<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate the CSS">CSS</a>
+<a href="http://validator.w3.org/check?uri=referer" title="Validate the XHTML">XHTML</a>
+Copyright &copy; 2006 [[PoweredBy]]
+</div> <!-- End of bottom bar -->
+</body>
+</html>

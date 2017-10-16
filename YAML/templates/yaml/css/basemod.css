@@ -1,0 +1,148 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : basemod.css
+**  Funktion    : Basis-Modifikation
+**
+*/
+
+@media all
+{
+
+/* Formatierung der Seite */
+body {
+	background: #99a;
+	padding: 10px;	
+	font-size: small;
+}
+
+/* Hier kann ein umlaufender Rand um die gesamte Webseite erzeugt werden */
+#page{ border: 1px #667 solid; background: #fff; }
+#page_margins {border: 1px #889 solid; min-width: 756px; max-width: 80em; margin:auto;}
+
+/* Formatierung der Kopfbereiches */
+#header { position:relative; height: 140px; color: #fff; background: #1f1e2e url("../img/yaml_bg.gif") repeat-x top; }
+#header img {position:absolute; top: 48px; left: 40px; font-size:208%;}
+
+/* Formatierung der Fußzeile */
+#footer { color:#888; background:#fff; margin: 1em; padding: 1em 0 0 0; border-top: 1px #ddd solid; line-height: 2em;}
+
+/* ######################################################################################################
+** ### Formatierung der Inhaltsspalten ##################################################################
+** ######################################################################################################
+*/
+#main { color: #000; background: #fff ; padding: 1em 0 0em 0em; } 
+
+/* linke Spalte */
+#col1 {	width: 22.5%; }	
+#col1_content {	padding-top:1.5em; margin-left: 1em; margin-right: 1em; color: #444; background:inherit; }
+
+/* Rechte Spalte */
+#col2 {	width: 25%; }
+#col2_content {	padding-top:1.5em; margin-left: 1em; margin-right: 1em; }
+
+/* Mittlere Spalte */
+#col3
+{
+  	margin-left: 22.5%; 
+   	margin-right: 25%; 
+	border-left: 0px dotted #ddd;
+	border-right: 0px dotted #ddd;
+}
+
+#col3_content { padding-top:1.5em; margin-left: 1em; margin-right: 1em; }
+
+
+/* ######################################################################################################
+** ### Formatierung des Teasers der Startseite ##########################################################
+** ######################################################################################################
+*/
+
+#teaser { 
+	margin: 0 1em 0em 1em; 
+	font-size: 0.82em; 
+	background: #f4f4f4; 
+	border-bottom: 1px #ccc solid; 
+	padding: 0.5em 0 1em 40px; 
+	color: #5f5d75; 
+}
+
+#teaser div {float:left; width: auto; margin-right: 1em; }
+#teaser .block1 {padding-top:1em;}
+#teaser .block3 {width: 45%; padding-top:0.5em;}
+#teaser .block3 .title {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; 
+	display:block;
+	font-size: 1.2em; 
+	font-weight:bold; 
+	color: #336699;  
+	background:inherit;  
+	margin:0.4em 0 0.5em 0; 
+}
+
+/* ######################################################################################################
+** ### Hauptnavigation: "Sliding Doors" von A List Apart ################################################
+** ######################################################################################################
+*/
+
+#nav_main {
+	width:100%;
+	float:left;
+	color: #fff;
+	background: #1f1e2e url("../img/sliding_door/nav_rund/bg.gif") repeat-x bottom;
+}
+
+#nav_main ul {
+  white-space: nowrap;
+  line-height: 1em;
+  margin:0;
+  padding:0 0 0 50px;
+  list-style:none;
+}
+  
+#nav_main li {
+  float:left;
+  background: #8f8cad url("../img/sliding_door/nav_rund/left.gif") no-repeat top left;
+/*  margin-right: 2px;  nur einfügen bei ECKIGEN Ecken */
+  padding: 0 0 0 3px;
+  margin: 0;
+  border-bottom:1px solid #000;
+}
+
+#nav_main a {
+  float:left;
+  display:block;
+  color:#334;
+  background: transparent;
+  background: url("../img/sliding_door/nav_rund/right.gif") no-repeat top right;
+  padding:5px 11px 3px 8px;
+  text-transform: none;
+  text-decoration:none;
+  font-weight:normal;
+}
+
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+#nav_main a {float:none;}
+/* End IE5-Mac hack */
+#nav_main a:hover { 
+    color:#fff;
+    background-color: transparent;
+    background: url("../img/sliding_door/nav_rund/right.gif") no-repeat top right;
+  }
+#nav_main #current {
+  background-image: url("../img/sliding_door/nav_rund/left_on.gif");
+  border-bottom:0px solid #f00;
+  }
+#nav_main #current a {
+  color:#334;
+  background-image:  url("../img/sliding_door/nav_rund/right_on.gif");
+  font-weight:bold;
+  padding-bottom:4px;
+  padding-top:5px;
+}
+
+} 

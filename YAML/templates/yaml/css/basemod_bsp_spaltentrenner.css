@@ -1,0 +1,18 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : basemod_bsp_variante1.css
+**  Funktion    : Variation des Basislayouts (2-Spalten-Layout mit Spaltentrenner)
+**
+*/
+
+@media screen
+{
+/* Spaltentrenner */
+#col3 {border-left: 2px #ddd dotted;}
+#col3 {border-right: 2px #ddd dotted;}
+
+} 

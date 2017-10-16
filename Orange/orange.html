@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl">
+<head>
+<title>[(site_name)] » [*pagetitle*]</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-language" content="nl" />
+<meta name="author" content="Jeroen Bosch" />
+<meta name="description" content="" />
+[[GetKeywords]]
+<link href="templates/orange/menu.css" rel="stylesheet" type="text/css" />
+<link href="templates/orange/tabs.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="templates/orange/menu.inc.js"></script>
+
+</head>
+
+<body>
+<div id="outer"> 
+  <div id="clearheader"></div>
+  <!-- to clear header -->
+  <div class="outerwrap"> 
+    <div id="centrecontent"> 
+      <!--centre content goes here -->
+       <br /><h2>[*longtitle*]</h2>[*content*]<br />
+    </div>
+    <div id="left"><br />
+      [[PullDownMenu?id=0&title=Navigation&auth=0]]<br />
+      [[PullDownMenu?id=29&title=Projects&auth=0]]<br />
+      [[PullDownMenu?id=41&title=Etomite&auth=0]]
+    </div>
+    <div style="clear: both;"></div>
+</div><!--end outer wrap -->
+    
+  <div id="right">
+<br />
+[[news2?newsid=8]]
+    <br />
+   <div class="navigationHead2"><span>sitepoint.com</span></div>
+<p>[[NewsParser?url=http://www.sitepoint.com/recent.rdf&showlink=false&newest=true&showheader=false]]</p>
+<br />
+<p>
+<a href="http://www.etomite.org/"><img src="assets/images/etomitePoweredBy.png" style="border:0;" alt="Etomite!!"></img></a>
+</p>
+
+  </div>
+  <div id="clearfooter"></div>
+  <!-- to clear footer -->
+</div> 
+<!-- end outer div -->
+<div id="footer">
+	<div class="fancyRow top2">
+	<div class="fcenter">Content managed by the <a href='http://www.etomite.org' title='Content managed by the Etomite Content Management System'>Etomite Content Management System</a></div>
+	</div>
+	<div class="footerText">MySQL: [^qt^], [^q^] request(s), PHP: [^p^], total: [^t^], document retrieved from [^s^], [[googlesniff]]</div>
+</div><!-- end footer -->
+
+<div id="header">
+
+
+<div id="tabbar">
+<div id="navcontainer">
+	<ul id="navlist">
+		<li><a id="taba" class="active" href="index.php" title="website">Website</a></li>
+		<li><a id="tabb" href="gallery/" title="foto">Foto's</a></li>
+		<li><a id="tabc" href="http://www.etomite.org" title="etomite">Etomite</a></li>
+		<li><a id="tabd" href="" title="forum">Forum</a></li>
+	</ul>
+</div>
+</div>
+<div class="headerWrap">
+	<div class="fancyRow bottom">
+  	<div class="fleft headers"><a href="[~[(site_start)]~]">[(site_name)]</a> &raquo; [[PageTrail]]</div><div class="fright">[[PoweredBy]]</div>
+  	</div> 
+</div><!-- end headerWrap -->
+</div><!-- end header -->
+</body></html>

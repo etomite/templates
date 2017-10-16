@@ -1,0 +1,215 @@
+/* commented backslash hack v2 \*/ 
+html, body{height:100%;} 
+/* end hack */ 
+
+body {
+	padding:0;
+	margin:0;
+	background:#FFFFFF; /*color of the left and right coll */
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+#outer{
+	height:100%;
+	min-height:100%;
+	margin-left:170px;   /* width of left coll */
+	margin-right:150px;  /* width of right coll*/
+	background:#FFFFFF; /* color of the middle coll  */
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	margin-bottom:-52px;
+	color: #000000;
+}
+ 
+html>body #outer{height:auto;} /*for mozilla as IE treats height as min-height anyway*/
+#header{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100px;
+	background:#000000;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	overflow:hidden;
+	color: #000000;
+}
+#left {
+	position:relative;/*ie needs this to show float */
+	width:170px;
+	float:left;
+	overflow:visible;
+	
+	margin-left:-169px; /*must be 1px less than width otherwise won't push footer down */
+
+}
+* html #left {padding-bottom:52px ;margin-right:-3px;}/*fix gap in ie next to float and clear footer because we've moved float too far left*/
+
+#left p {padding-left:3px;padding-right:2px}
+#right p {padding-right:3px;padding-left:2px;}
+
+#right {
+	position:relative;/*ie needs this to show float */
+	width:150px;
+	overflow:hidden;
+	float:right;
+	margin-right:-149px;/*must be 1px less than width otherwise won't push footer down */
+}
+* html #right {padding-bottom:52px ;margin-right:-150px;}/* stop float drop in ie */
+
+#footer {
+	width:100%;
+	clear:both;
+	height:50px;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	background-color: #000000;
+	color: #000000;
+	position:relative;
+}
+* html #footer {/*only ie gets this style*/
+	\height:52px;/* for ie5 */
+	he\ight:50px;/* for ie6 */
+}
+#clearheader{height:102px;}/*needed to make room for header*/
+#clearfooter{clear:both;height:50px;}/*needed to make room for footer*/
+* > html #clearfooter {float:left;width:100%;}
+div,p  {margin-top:0}/*clear top margin for mozilla*/
+* html #centrecontent {height:1%;margin-bottom:12px}/* combat IE's 3 pixel jog */
+#centrecontent {float:right;width:100%;position:relative;margin: 0 -0.5%;}
+.outerwrap { float: left; width: 99%;}
+
+.headerWrap {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	height: 25px;
+	position: absolute;
+	bottom: 1px;
+	background: #000000;
+	}
+	
+
+.fancyRow {
+	background: #FF9000;
+	color: #000000;
+	height: 25px;
+	line-height: 25px;
+	width: 100%;
+	}
+	
+.bottom {
+	bottom: 0px;
+	position: absolute;
+	}
+	
+.top2 {
+	top: 1px;
+	position: relative;
+	}
+
+.fleft {
+	text-align: left;
+	position: absolute;
+	top: 0;
+	left: 2px;
+	padding: 0px 0px 0px 2px;
+	line-height: 25px;
+	}
+	
+.fright {
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 2px;
+	padding: 0px 2px 0px 0px;
+	line-height: 25px;
+	}
+	
+.fcenter {
+	text-align: center;
+	top: 0;
+	line-height: 25px;
+	}
+	
+.headers {
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+.headers a, .headers a:hover, .headers a:visited { 
+	color: #000000;
+	text-decoration: none;
+	}
+
+.footerText {
+	text-align: center;
+	font-size: 10px;
+	color: #ff9000;
+	margin-top: 2px;
+	}
+.footerText a, .footerText a:visited {color: #FF9000;}
+
+img {
+	margin: 3px;
+	border: 0px;
+	}
+
+fieldset { 
+	padding: 5px; 
+	}
+
+legend {  
+	font-weight: bold;
+	}
+
+legend a,legend a:hover { 
+	display: block; 
+	text-decoration: none;
+	}
+
+a { 
+	color: #821517; 
+	text-decoration: none;
+	}
+
+a:hover {
+	text-decoration: underline;
+	}
+	
+a:visited { 
+	text-decoration: none;
+	color: #000;
+	}
+	
+.lastMod {
+	text-align: right;
+	font-size: xx-small;
+	}
+.tableHeader {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	background: #FF9000;
+	color: #000000;
+	margin: 0px auto 3px auto;
+	padding: 1px 0px 1px 4px;
+}
+
+.tableItem {
+	text-align: left;
+	font-size: 12px;
+	background: #DFDFDF;
+	color: #000000;
+	padding: 1px 0px 1px 4px;
+	margin-left: 0px;
+}
+
+.tableItem a {color: #000000;}
+
+.PrevNextMenu {
+	text-align: center;
+	}	
+
+/* End of code */

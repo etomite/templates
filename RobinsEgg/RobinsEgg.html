@@ -1,0 +1,75 @@
+<!--
+	Robins Egg Etomite Template
+	Inspired by wehner's Tangerine OWD template
+	http://www.wehnerweb.com
+	Modified by B. Woods Design for Etomite CMS use
+ -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+ 
+  <head>[[GetKeywords]]
+   
+<title>[(site_name)][*pagetitle*] &raquo;</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	
+	<meta name="author" content="PUT YOUR EMAIL HERE" />
+      
+<link rel="stylesheet" type="text/css" media="print" href="templates/RobinsEgg/structure.css">
+<link rel="stylesheet" type="text/css" media="print" href="templates/RobinsEgg/colors.css">
+
+<style type="text/css"><!-- @import url(templates/RobinsEgg/structure.css); @import url(templates/RobinsEgg/colors.css); --></style>
+  
+  </head>
+ 
+  <body>
+
+	<div class="container">
+
+		<div class="header">
+		
+			<div>Your Clever and Effervescent Slogan Here</div> <h1>Robin's Egg Etomite Template</h1>
+			
+		</div>
+		<div class="menu">[[SimpleListMenu?id=0]]</div>		
+		<div class="sub_menu">
+						<h3>Menu</h3>[[ListGlobal]]
+
+<h3>Announcements</h3> 
+<ul>
+<li>We are happy to announce that we now have announcements.</li>
+</ul>
+
+<h3>Links</h3>			
+<ul>
+<li><a href="http://www.bwoodsdesign.com">B. Woods Design</a></li>
+<li><a href="http://etomite.org">Etomite CMS</a></li>
+</ul>
+</div>
+
+<div class="side_box">
+<h3>Search this site</h3>[[SearchForm]]</div>
+
+		<div class="content">
+			
+			<h1>[*longtitle*]</h1>
+
+			[*content*]			
+		</div>
+
+		<div class="sub_links"></div>
+
+		<div class="footer"><p align="center">&copy;
+          <script language = 'JavaScript'>
+function y2k(number) { return (number < 1000) ? number + 1900 : number; }
+var today = new Date();
+var year  = y2k(today.getYear());
+document.write(year);
+          </script> YourCompany. All rights reserved.</div></p>
+
+	</div>
+
+  </body>
+
+</html>

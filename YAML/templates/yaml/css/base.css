@@ -1,0 +1,160 @@
+/* ######################################################################################################
+** # "Yet Another Multicolum Layout" (c) by Dirk Jesse (http://www.highresolution.info/webdesign/yaml/) #
+** ######################################################################################################
+** 
+**  YAML Version: 2.1.1
+**  Dateiversion: 04.02.06  
+**  Datei       : base.css
+**  Funktion    : Basis-Stylesheet
+**
+**  Don't make any changes in this file. Any changes should be placed in basemod-stylefiles.
+*/
+
+
+@media all
+{
+/* ######################################################################################################
+** ### Vorbereitende Maßnahmen ##########################################################################
+** ######################################################################################################
+**
+** Die Angaben entstammen dem Artikel 'Useful Code Snippets' von Mike Foskett
+** [http://www.websemantics.co.uk/tutorials/useful_css_snippets/]
+*/
+
+html {height:100%} 
+
+body { 
+/* Vertikalen Scrollbalken im Netscape & Firefox erzwingen. Dies verhindert, dass zentrierte Layouts 
+** um 10 Pixel springen wenn der Seiteninhalt kleiner wird als die Höhe des Browserfensters. */
+	min-height: 101%;	
+/* Beseitigung des Rundungsfehlers bei Schriftgrößen im Opera sowie Standardformatierungen */
+    font-size: 100.01%; 
+/* FIX: Verhindert, dass positionierte Elemente nicht verschoben werden when die Größe des Browser Fensters geändert wird. */
+    position: relative; 
+
+/* Vorgabe der Standardfarben und Textausrichtung*/     
+    color: #000;        
+    background: #fff;
+    text-align: left; 
+} 
+
+/* Hiermit werden die Randabstände und border aller HTML-Elemente auf Null gesetzt. Damit wird das       
+** Aussehen der Webseite in unterschiedlichen Browsern vereinheitlicht. 
+**
+** Achtung: Gleichzeitig wird damit jedoch das extreme Zoom-Verhalten im Internet Explorer heraufbeschworen
+**          Der dafür erforderliche Hack sollte daher nicht vergessen werden, um diese Problem wieder zu
+**          beseitigen. Er ist in der Datei "iehacks.css" zu finden.
+*/
+
+* {margin:0; padding:0; border:0; font-size: 1em;}
+
+/* ######################################################################################################
+** ### DIV-Container des Basislayouts ###################################################################
+** ######################################################################################################
+*/
+
+#topnav {
+	position:relative;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	background: transparent;
+	text-align: right; /* Erforderlich, damit im Opera 6 wirklich rechts plaziert ! */
+}
+
+#nav { clear:both; width: 100%; z-index: 100;}
+#main {	clear:both; width: 100%; z-index: 10;}
+
+
+#col1 {
+	float: left;
+	width: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+}
+
+#col2 {
+	float:right; 
+	width: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+}
+
+#col3
+{
+	width:auto;
+   	margin-left: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+   	margin-right: 200px; /* Standard-Wert, falls keine anderen Vorgaben gemacht werden */
+}
+
+
+/* Der z-Index verhindert, dass im Falle des noch bestehenden IE-Bugs die Texte vor 
+** dem Spaltenhintergrund erscheinen. */
+#col1 {z-index: 3;}
+#col2 {z-index: 5;}
+#col3 {z-index: 1;}
+#col1_content {z-index: 4;}
+#col2_content {z-index: 6;}
+#col3_content {z-index: 2;}
+
+#col1, #col2, #col3 { position: relative; }
+#col1_content, #col2_content, #col3_content { position: relative; }
+
+#footer { clear:both; width:auto; }
+
+/* ######################################################################################################
+** ### Markupfreie CSS-Floatclearing-Lösungen ###########################################################
+** ######################################################################################################
+*/
+
+/* Clearfix-Methode zum Clearen der Float-Umgebungen */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+/* Diese Angabe benötigt der Safari-Browser zwingend !! */
+.clearfix {display: block;}
+
+/* Overflow-Methode zum Clearen der Float-Umgebungen */
+.floatbox { overflow:hidden; }
+
+/* Clearen der 3 Inhaltsspalten mittels dieses speziellen hr-Tags */
+hr.clear_columns{	
+	content: "."; 
+	display: block;  
+	height: 0; 
+	line-height: 0px; 
+	clear: both; 
+	float: left; 
+	visibility: hidden; 
+	border: 0; 
+	padding: 0;
+	margin: -2em 0 0 0; /* erforderlich damit kein Leerraum zwischen Spalten und Footer entsteht */
+}
+
+/* ######################################################################################################
+** ### Standard-Formatierungen für Listen & Zitate ######################################################
+** ######################################################################################################
+*/
+
+ul, ol, dl { margin: 0 0 1em 0; }
+li { margin-left: 1.5em; line-height: 1.5em; }
+
+dt { font-weight: bold; }
+dd { margin: 0 0 1em 2em; }
+
+blockquote, cite { margin: 0 0 1em 1.5em; font-size: 0.93em; width: auto;}
+
+}
+
+/* ######################################################################################################
+** ### Skiplink-Navigation ##############################################################################
+** ######################################################################################################
+*/
+@media screen, print
+{
+.skip {
+	position: absolute;
+	left: -1000em; 
+	width: 20em;
+}
+}

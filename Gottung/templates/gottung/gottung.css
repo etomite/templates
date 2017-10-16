@@ -1,0 +1,110 @@
+body {
+background-color: #CCCC99;
+}
+
+a, a:visited {
+color: #333300;
+text-decoration: none;
+font-weight: bold;
+}
+
+a:hover {
+text-decoration: underline;
+font-weight: bold;
+}
+
+#container {
+color: #666633;
+font: 14px serif;
+text-transform: none;
+margin: 10px auto;
+   padding: 5px;
+margin-bottom: 50px;
+}
+
+#header {
+margin-left: auto;
+margin-right: auto;
+width: 50em;
+}
+
+#header h1 {
+text-align: center;
+text-indent: -9999px;
+width: 700px;
+height: 150px;
+background: url(../images/gottung/header.gif);
+background-position: center;
+margin: 0;
+padding: 0;
+}
+
+#content {
+width: 78%;
+float: right;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#content h1, h2 {
+       text-decoration: none;
+       letter-spacing: 2px;
+       border-bottom: solid 1px #666633;
+font-variant: small-caps;
+}
+
+#menu {
+float: left;
+text-align: left;
+padding: 5px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-right: 1px solid #666633;
+width: 18%;
+color: #666633;
+
+}
+
+#menu .bgImage {
+margin-top:0px;
+margin-bottom:0px;
+padding:0px;
+text-align: center;
+}
+
+#menu ul {
+list-style-type: none;
+}
+
+#footer {
+position: relative;
+padding: 5px 0;
+clear: both;
+text-align: center;
+       color: #666633;
+       font: 10px serif;
+       text-transform: uppercase;
+line-height: 10px;
+border-top: solid 1px #666633;
+}
+
+fieldset {
+border: solid 1px #666633;
+padding: 5px;
+}
+
+/* image stuff */
+.caption {
+text-align: left;
+text-transform: uppercase;
+font: 10px serif;
+}
+
+#gavel {
+float: right;
+padding: 10px;
+}
+
+#grp-farm {
+       padding-top: 20px;
+}

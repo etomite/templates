@@ -1,0 +1,86 @@
+/* 
+	Aura: Webpage Exoskin v1. Copyright Leorex Pty Limited, 2003 (http://www.leorex.com/).
+	Licenced under Attribution-ShareAlike License (http://creativecommons.org/licenses/by-sa/1.0/)
+*/
+	 
+	body {
+		margin:0;
+		padding:0;
+		text-align:center;
+		}
+	
+/* Base */
+	#container {
+		width:770px;
+		margin:0 auto;
+		padding:0;
+		text-align:left;
+		}
+	#globalhead {
+		height:20px;
+		margin:0;
+		padding:0;
+		}
+	#containerhead {
+		margin:0;
+		padding:0;
+		}
+	#page {
+		float:left;
+		width:550px;
+		margin:0;
+		padding:0;
+		}
+	#sidebar {
+		float:right;
+		width:220px;
+		margin:0;
+		padding:0;
+		}
+	#containerfoot {
+		margin:0;
+		padding:0;
+		}
+
+/* Section */
+	#globalheadcontent {
+		margin:0 11px;
+		padding:0;
+		}
+	#containerheadcontent {
+		margin:0 10px;
+		padding:0;
+		}
+	#primarynav {
+		margin:0 1px;
+		padding:0;
+		}
+	#pagehead {
+		margin:0 1px 0 11px;
+		padding:0;
+		}
+	#pagecontent {
+		margin:0 1px 0 11px;
+		padding:0 15px;
+		}
+	#sidebarcontent {
+		margin:0 11px 0 0;
+		padding:0;
+		}
+	#containerfootcontent {
+		margin:0 221px 0 11px;
+		padding:15px;
+		}
+
+/* Miscellaneous */ 
+	#containerheadcontent h1 {
+		display:none;
+		}
+	#containerheadcontent img {
+		display:block;
+		margin:0;
+		padding:0;
+		}
+	.bottom {
+		clear:both;
+		}

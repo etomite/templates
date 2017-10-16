@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd" >
+<html>
+<head>
+<title>[(site_name)] - [*pagetitle*]</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<!-- "Spring" template for PhaseCMS v0.5.3 created by Coleen Hein (aka WebbyMom) July 2004 -->
+
+<!-- <link  rel="stylesheet" href="styles.css" type="text/css" /> -->
+<!-- once your styles are set, put the following styles into an external file and link as per example above -->
+
+<style type="text/css">
+html, body {
+margin:0;
+padding:0;
+font: 0.9em verdana, sans-serif;
+color: #000000;
+}
+
+a:link {color: #696;} /* drk green */
+a:visited {color: #c9f;} /* mauve */
+a:hover {background-color: #c9f; color: #fff;} /* mauve bg */
+a:visited:hover {background-color: #c9f; color: #fff;}
+a:hover.nohover { background-color: #fff; }
+
+h1 {color: #c9f;} /* mauve */
+h2 {color: #9c0;} /* lite green */
+h3 {color: #696;} /* drk green */
+h4 {color: #000;} /* black */
+
+.parahdg { padding-top: 8px; } /* padding for paragraph heading images */
+.bold {font-weight: bold;}
+.indent { margin-left: 2em; margin-top: -15px; padding-top: 0; }
+.tab {margin-left: 2em;}
+
+#pagewidth {
+width:100%;
+ min-width: 500px;
+}
+
+#header {
+height:70px;  /* change this height to suit */
+padding-top: 10px;
+padding-left: 150px;
+padding-bottom: 5px;
+width:80%;
+background-color:#fff;
+
+/* take the font and colour styles out if you use an image instead in the hdr */
+font: bold 45px verdana, arial, sans-serif;  
+color: #696;
+}
+
+#leftcol {
+width:150px;
+float:left;
+position:relative;
+margin-left:-150px;
+margin-right:2px;
+background-color: #fff;
+border-right: 2px solid #696;
+border-bottom: 2px solid #696;
+}
+
+#leftcol img {
+margin: 0 0 10px 0;
+padding: 0;
+}
+
+#outer{
+border:solid white 0px;
+
+ /*/*/ border-left-width: 150px;  /* left column width. NN4 hack to hide borders */
+border-left-color: #fff;   /* left column colour */
+border-left-style: solid;
+background-color: #fff; /* center column colour */
+width: auto;
+
+}
+
+#footer {
+height:50px; /* change this height to suit */
+width:100%;
+font-style: italic;
+font-weight: bold;
+background-color: #c9f;
+color: #fff;
+}
+
+#inner {margin:0; width:100%;}
+
+#maincol{
+float: left;
+width: 90%;
+position: relative;
+margin: 0 -8px 0 -2px;
+background-color: #fff;
+}
+
+#outer>#inner { border-bottom: 1px solid #fff;  }
+
+.clr {clear:both;}
+
+.content {padding:10px;} /*padding for content */
+
+#pagetrail {  
+padding: 3px 5px 3px 0;
+font-size: 85%;
+font-style: italic;
+text-align: right;
+background-color: #9c0; color: #fff;
+width: 100%;
+}
+
+#pagetrail a:link {
+color: #fff;
+}
+
+#pagetrail a:hover {
+background-color: #c9f;
+color: #fff;
+}
+
+#pagetrail a:visited {
+color: #000;
+}
+
+/* Menu Styles */
+
+#mainsubmenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 95%;
+}
+
+.navig a {
+  display: block;
+  text-decoration: none;
+  margin: 0; padding: 1px 6px 1px 3px;
+}
+
+.navig a:hover {
+  color: #000;
+  background-color: #eedeff; /* light mauve */
+  border-right: 4px solid #c9f;
+  padding-right: 3px;
+}
+
+#mainsubmenu li ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+  list-style: none;
+}
+
+#mainsubmenu li ul li ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+  list-style: none;
+}
+
+#mainsubmenu_active {/* --- style for the current page --- */
+    font-weight: bold;
+    font-style: italic;
+}
+
+#submenu {
+display: inline;
+}
+
+
+#header .content{padding-bottom:0;} /*padding bottom 0 to remove space in IE5 Mac*/
+
+/*printer styles*/
+@media print{
+/*hide the left column when printing*/
+#leftcol{display:none;}
+#outer{border-left:0;}
+}
+</style>
+</head>
+<body>
+
+<!-- Generated at www.csscreator.com -->
+
+<div id="pagewidth" >
+<div id="header" >
+ <a href="index.php" class="nohover">[(site_name)]</a> <!-- Replace with site logo image or header image -->
+</div>
+
+<div id="outer" >
+<div id="inner">
+
+ <div id="leftcol" >
+ <div class="navig">
+ <div class="content"><p>Main Menu</p>[[MainSubMenu]]</div></div>  <!-- replace paragraph with image if you like -->
+</div>
+
+<div id="maincol" >
+<div id="pagetrail">[[PageTrail]]</div>
+<div class="content">[*content*]</div><!-- end div class content -->
+</div><!-- end div class maincol -->
+
+<div class="clr"></div>
+<!-- close inner and outer -->
+</div>
+</div>
+
+<div id="footer" >
+<div class="content">&copy; Your name, 2004.  All rights reserved.<br />
+  <div>[[PoweredBy]]</div>
+</div>
+</div>
+<div class="clr"></div>
+</div>
+</body>
+</html>

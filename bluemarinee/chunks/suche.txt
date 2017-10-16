@@ -1,0 +1,7 @@
+<form action="index.php?id=4" method="post">
+<div align="left" class="search">
+
+	<input alt="suche" class="inputbox" type="text" name="search" size="20" value="Ihr Suchbegriff"  onblur="if(this.value=='') this.value='Ihr Suchbegriff';" onfocus="if(this.value=='Ihr Suchbegriff') this.value='';" />
+	<input type="hidden" name="option" value="search" />
+</div>
+</form>	

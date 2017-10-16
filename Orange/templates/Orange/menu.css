@@ -1,0 +1,104 @@
+/* below nothing but stuff for the menu */
+
+DIV.navigation2 ul {
+	border:	0px;;
+	background-color: #fff;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 4px;
+	padding-top: 0px;
+	list-style: none;
+	width: 150px; /* Width of Menu Items */
+	margin-left:auto;
+ 	margin-right:auto;
+ 	text-align:left;
+ 	z-index:100;
+	}
+
+DIV.navigation2 ul li {
+	position: relative;
+	list-style: none;
+	margin: 0px;	
+	}
+
+DIV.navigation2 li ul {
+	position: absolute;
+	left: 149px; /* Set 1px less than menu width */
+	top: 0;
+	display: none;
+	}
+
+
+DIV.navigation2 ul li a {
+	padding: 1px 0px 1px 4px;
+	margin:	0px;
+	margin-bottom: 3px;
+	border:	0px;
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #DFDFDF;
+	display: block;
+	}
+
+DIV.navigation2 ul li img {
+	border-bottom: 1px solid #DFDFDF;
+	}
+
+DIV.navigation2 ul li a:visited {text-decoration: none;}
+
+/* Fix IE. Hide from IE Mac \*/
+
+* html div.navigation2 li { float: left; height: 1%; }
+* html div.navigation2 li a { height: 1%; }
+
+/* End */
+
+
+
+/* Hover Styles */
+
+DIV.navigation2 ul li a:hover {
+	background: #CBCBCB;
+	text-decoration: underline;
+	border: 0px; 
+	}
+		
+ /* Sub Menu Styles */ 
+ 
+DIV.navigation2 li ul li a {
+		padding: 1px 0px 1px 4px;
+		margin-left: 3px;
+		}
+		
+ /* The magic */
+ 
+DIV.navigation2 li:hover ul {
+		 display: block;
+		 }
+		 
+DIV.navigation2 li.over ul {
+		display: block;
+		}
+		
+DIV.navigation2 a:active {
+		color: #000000;
+		font-weight: bold;
+		}
+		
+.navigationHead2 {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	background: #FF9000;
+	color: #000000;
+	width: 150px;
+	margin: 0px auto 3px auto;
+	}
+
+.navigationHead2 span {
+	padding: 1px 0px 1px 4px;
+	}
+	
+/* End of code */
